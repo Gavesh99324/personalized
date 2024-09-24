@@ -7,12 +7,20 @@ import search_icon_light from '../../Assests/search-w.png'
 import search_icon_dark from '../../Assests/search-b.png'
 import toogle_light from '../../Assests/night.png'
 import toogle_dark from '../../Assests/day.png'
+import heading_background from '../../Assests/Stethoscope-blue-background.jpg'
 
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme}) => {
+
+    const toggle_mode = () => {
+        theme === 'light' ? setTheme('dark') : setTheme('light')
+    }
+
+
   return (
+    <>
     <div className='navbar'>
-        <img src={main_logo2} alt='' className='logo'/>
+        <img src={theme === 'light' ? main_logo2 : main_logo2} alt='' className='logo'/>
         <ul>
             <li>Home</li>
             <li>Journal</li>
@@ -26,12 +34,20 @@ const Navbar = () => {
 
         <div className='search-box'>
             <input type="text" placeholder='Search'/>
-            <img src={search_icon_light} alt=""  className='same_icon'/>
+            <img src={theme === 'light' ? search_icon_light : search_icon_dark} alt=""  className='same_icon'/>
         </div>
 
-        <img src={toogle_light} alt="" className='toggle-icon'/>
+        <img onClick={() => {toggle_mode()}} src={theme === 'light' ? toogle_light : toogle_dark} alt="" className='toggle-icon'/>
     </div>
+    <div>
+        <img src={heading_background} alt="" className='head_background_image'/>
+    </div>
+   </>
   )
 }
 
 export default Navbar
+
+
+
+
