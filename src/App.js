@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import FooterContainer from "./Components/containers/footer";
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
   return (
     <div className={`container ${theme}`}>
       <Navbar theme={theme} setTheme={setTheme}/>
+      <FooterContainer />
     </div>
   );
 }

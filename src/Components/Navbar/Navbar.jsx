@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import main_logo2 from '../../Assests/main_logo2.jpg'
 //import logo_light from '../../Assests/logo-black.png'
@@ -12,8 +12,19 @@ import heading_background from '../../Assests/Stethoscope-blue-background.jpg'
 
 const Navbar = ({ theme, setTheme}) => {
 
+    const [isHovering, setIsHovering] = useState(false)
+    const [text, setText] = useState('')
+
     const toggle_mode = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light')
+    }
+
+    function handleMouseEnter() {
+        setIsHovering(true)
+    }
+
+    function handleMouseLeave() {
+        setIsHovering(false)
     }
 
 
@@ -40,7 +51,13 @@ const Navbar = ({ theme, setTheme}) => {
         <img onClick={() => {toggle_mode()}} src={theme === 'light' ? toogle_light : toogle_dark} alt="" className='toggle-icon'/>
     </div>
     <div>
-        <img src={heading_background} alt="" className='head_background_image'/>
+        <img 
+           src={heading_background} 
+           alt="" 
+           className='head_background_image'
+           onMouseEnter={handleMouseEnter}
+           onMouseLeave={handleMouseLeave}
+        />
     </div>
    </>
   )
