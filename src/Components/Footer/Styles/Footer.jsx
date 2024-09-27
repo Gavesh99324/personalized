@@ -1,8 +1,30 @@
 import styled from "styled-components";
+import { useState } from "react";
+
+
+const TitlesHover = ({ title }) => {
+    const [hovered, setHovered] = useState(false);
+
+    const style = {
+        color: hovered? '#413535' : '#ffffff',
+        transition: 'color 0.3s ease',
+        cursor: 'pointer',
+        textDecoration: hovered? 'underline' : 'none',
+    }
+
+    return (
+        <h2 style={style} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+            {Title}
+        </h2>
+    )
+}
+export default TitlesHover;
+
 
 export const Container = styled.div`
     padding: 80px 60px;
-    background: radial-gradient(circle, rgba(92, 39, 251, 1), rgba(112, 71, 247, 1) 100%);
+    background: radial-gradient(circle, rgba(174, 223, 247, 1), rgba(168, 213, 186, 1) 100%);
+    border-radius: 25px;
 `
 
 
@@ -29,7 +51,7 @@ export const Row = styled.div`
     }
 `
 export const Link = styled.div`
-    color: #fff;
+    color: #413535;
     margin-bottom: 20px;
     font-size: 18px;
     text-decoration: none;
@@ -41,7 +63,7 @@ export const Link = styled.div`
 `
 export const Title = styled.div`
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 40px;
     font-weight: bold;
 `

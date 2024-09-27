@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background: #ffffff;
     padding: 1px ;
     transition: 0.5s;
     border-radius: 25px;
@@ -40,7 +40,7 @@ ul li {
 .search-box {
     display: flex;
     align-items: center;
-    background: #4a9edf;
+    background: #5bf1d6;
     padding: 10px 20px;
     border-radius: 50px;
     height: 18px;
@@ -51,13 +51,13 @@ ul li {
     background: transparent;
     border: 0;
     outline: 0;
-    color: #fff;
+    color: #000000;
     font-size: 12px;
     max-width: 100px;
 }
 
 .search-box input::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .search-box img {
@@ -66,7 +66,7 @@ ul li {
 }
 
 .dark .navbar {
-    background: #000;
+    background: #000000;
     color: #fff;
 }
 

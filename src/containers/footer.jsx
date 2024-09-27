@@ -1,5 +1,6 @@
 import React from "react";
-import { Footer }  from "./Components/Footer/index.jsx "
+import Footer from "../Components/Footer"
+import TitlesHover from "../Components/Footer/Styles/Footer";
 
 
 export function FooterContainer() {
@@ -28,6 +29,14 @@ export function FooterContainer() {
                     <Footer.Link href="#">Feedback</Footer.Link>
                     <Footer.Link href="#">Newsletter Subscription</Footer.Link>
                     <Footer.Link href="#">Language Selection</Footer.Link>
+                </Footer.Column>
+                <Footer.Column>
+                    <Footer.Title>Follow us on:</Footer.Title>
+                    <Footer.Link href="#">FB</Footer.Link>
+                    <Footer.Link href="#">YT</Footer.Link>
+                    <Footer.Link href="#">Insta</Footer.Link>
+                    <Footer.Link href="#">Twiter</Footer.Link>
+                    <Footer.Link href="#">Linkedin</Footer.Link>
                 </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
