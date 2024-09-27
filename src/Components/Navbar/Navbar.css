@@ -27,7 +27,7 @@ ul {
 ul li {
     display: inline-block;
     margin: 5px 10px;
-    font-size: 12px;
+    font-size: 9px;
     cursor: pointer;
 }
 

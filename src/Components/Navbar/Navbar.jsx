@@ -8,6 +8,7 @@ import search_icon_dark from '../../Assests/search-b.png'
 import toogle_light from '../../Assests/night.png'
 import toogle_dark from '../../Assests/day.png'
 import heading_background from '../../Assests/Stethoscope-blue-background.jpg'
+import TitlesHover, { Title } from '../Footer/Styles/Footer'
 
 
 const Navbar = ({ theme, setTheme}) => {
@@ -33,14 +34,14 @@ const Navbar = ({ theme, setTheme}) => {
     <div className='navbar'>
         <img src={theme === 'light' ? main_logo2 : main_logo2} alt='' className='logo'/>
         <ul>
-            <li>Home</li>
-            <li>Journal</li>
-            <li>Chat with Assistant</li>
-            <li>Mood Tracker</li>
-            <li>Resources</li>
-            <li>Profile</li>
-            <li>Notifications</li>
-            <li>Logout</li>
+            <li><TitlesHover Title="Home" /></li>
+            <li><TitlesHover Title="Journal" /></li>
+            <li><TitlesHover Title="Chat with Assistant" /></li>
+            <li><TitlesHover Title="Mood Tracker" /></li>
+            <li><TitlesHover Title="Resources" /></li>
+            <li><TitlesHover Title="Profile" /></li>
+            <li><TitlesHover Title="Notifications" /></li>
+            <li><TitlesHover Title="Logout" /></li>
         </ul>
 
         <div className='search-box'>

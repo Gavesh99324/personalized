@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { useState } from "react";
 
 
-const TitlesHover = ({ title }) => {
+const TitlesHover = ({ Title }) => {
     const [hovered, setHovered] = useState(false);
 
     const style = {
-        color: hovered? '#413535' : '#ffffff',
+        color: hovered? '#413535' : '#000000',
         transition: 'color 0.3s ease',
         cursor: 'pointer',
         textDecoration: hovered? 'underline' : 'none',

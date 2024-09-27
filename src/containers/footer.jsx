@@ -9,29 +9,29 @@ export function FooterContainer() {
             <Footer.Wrapper>
                 <Footer.Row>
                 <Footer.Column>
-                    <Footer.Title>About Us</Footer.Title>
+                    <TitlesHover Title="About Us" />
                     <Footer.Link href="#">Story</Footer.Link>
                     <Footer.Link href="#">Clients</Footer.Link>
                     <Footer.Link href="#">Contact Us</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Legal Section</Footer.Title>
+                    <TitlesHover Title="Legal Section" />
                     <Footer.Link href="#">Privacy & Ploicy</Footer.Link>
                     <Footer.Link href="#">Terms & Conditions</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Resources</Footer.Title>
+                    <TitlesHover Title="Resources" />
                     <Footer.Link href="#">Mental Health Resources</Footer.Link>
                     <Footer.Link href="#">Help</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Social Media</Footer.Title>
+                    <TitlesHover Title="Social Media" />
                     <Footer.Link href="#">Feedback</Footer.Link>
                     <Footer.Link href="#">Newsletter Subscription</Footer.Link>
                     <Footer.Link href="#">Language Selection</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Follow us on:</Footer.Title>
+                    <TitlesHover Title="Follow us on:" />
                     <Footer.Link href="#">FB</Footer.Link>
                     <Footer.Link href="#">YT</Footer.Link>
                     <Footer.Link href="#">Insta</Footer.Link>
