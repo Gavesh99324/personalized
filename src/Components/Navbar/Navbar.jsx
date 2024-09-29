@@ -43,7 +43,6 @@ const Navbar = ({ theme, setTheme}) => {
             <li><TitlesHover Title="Notifications" /></li>
             <li><TitlesHover Title="Logout" /></li>
         </ul>
-
         <div className='search-box'>
             <input type="text" placeholder='Search'/>
             <img src={theme === 'light' ? search_icon_light : search_icon_dark} alt=""  className='same_icon'/>
