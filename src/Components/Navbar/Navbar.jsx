@@ -15,6 +15,7 @@ const Navbar = ({ theme, setTheme}) => {
 
     const [isHovering, setIsHovering] = useState(false)
     const [text, setText] = useState('')
+    const [searchBoxExpand, setSearchBoxExpand] = useState('')
 
     const toggle_mode = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light')
@@ -27,6 +28,11 @@ const Navbar = ({ theme, setTheme}) => {
     function handleMouseLeave() {
         setIsHovering(false)
     }
+
+    const handleSearchBoxExpand = (e) => {
+        setSearchBoxExpand(e.target.value)
+    }
+
 
 
   return (
@@ -43,8 +49,16 @@ const Navbar = ({ theme, setTheme}) => {
             <li><TitlesHover Title="Notifications" /></li>
             <li><TitlesHover Title="Logout" /></li>
         </ul>
-        <div className='search-box'>
-            <input type="text" placeholder='Search'/>
+
+        <div className='search-container'>
+            <input
+                className='search-box' 
+                type="text" 
+                placeholder='Search' 
+                value={searchBoxExpand} 
+                onChange={handleSearchBoxExpand}
+            />
+
             <img src={theme === 'light' ? search_icon_light : search_icon_dark} alt=""  className='same_icon'/>
         </div>
 

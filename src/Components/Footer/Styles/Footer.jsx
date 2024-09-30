@@ -6,7 +6,7 @@ const TitlesHover = ({ Title }) => {
     const [hovered, setHovered] = useState(false);
 
     const style = {
-        color: hovered? '#413535' : '#000000',
+        color: hovered? '#F1C40F' : '#000000',
         transition: 'color 0.3s ease',
         cursor: 'pointer',
         textDecoration: hovered? 'underline' : 'none',
@@ -23,8 +23,8 @@ export default TitlesHover;
 
 export const Container = styled.div`
     padding: 80px 60px;
-    background: radial-gradient(circle, rgba(174, 223, 247, 1), rgba(168, 213, 186, 1) 100%);
-    border-radius: 25px;
+    border-radius: 0;
+    background: #2C3E50;
 `
 
 
