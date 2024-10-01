@@ -50,14 +50,14 @@ export const Row = styled.div`
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 `
-export const Link = styled.div`
-    color: #413535;
+export const Link = styled.a`
+    color: #fff;
     margin-bottom: 20px;
     font-size: 18px;
     text-decoration: none;
 
     &:hover {
-        color: #ff9c0;
+        color: #66FF66;
         transition: color 0.3s ease;
     }
 `
