@@ -35,12 +35,15 @@ export const Wrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
 `
+
+/*
 export const Column = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
     margin-left: 60px;
 `
+/*
 export const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -50,6 +53,26 @@ export const Row = styled.div`
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 `
+*/
+
+
+export const Row = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping to another row */
+    gap: 20px; /* Add gap between columns */
+`;
+
+export const Column = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1; /* Allow columns to take equal width */
+    min-width: 150px; /* Ensure minimum width for each column */
+    margin-left: 20px;
+`;
+
+
 export const Link = styled.a`
     color: #fff;
     margin-bottom: 20px;
