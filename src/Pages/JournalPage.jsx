@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Journal() {
+export default function JournalPage() {
   return (
     <div>
       
     </div>
   )
 }
+
