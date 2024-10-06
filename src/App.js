@@ -12,16 +12,17 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/Chat" component={ChatWithAssistant} />
-        <Route exact path="/Journal" component={JournalPage} />
-        <Route exact path="/Login" component={LoginPage} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Chat" element={<ChatWithAssistant />} />
+        <Route path="/Journal" element={<JournalPage />} />
+        <Route path="/Login" element={<LoginPage />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
 
 
 
