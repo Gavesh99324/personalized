@@ -1,10 +1,10 @@
 import React from 'react'
-import './chatbot.css'
+import './Chatbot.css'
 
-export default function chatbot() {
+export default function Chatbot() {
   return (
     <div>
-      
+      Chatbot
     </div>
   )
 }

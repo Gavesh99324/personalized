@@ -1,10 +1,10 @@
 import React from 'react'
-import './login.css'
+import './Login.css'
 
-export default function login() {
+export default function Login() {
   return (
     <div>
-      <h1>Login page</h1>
+      Login
     </div>
   )
 }

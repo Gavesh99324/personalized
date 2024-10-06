@@ -1,10 +1,10 @@
 import React from 'react'
-import './journal.css'
+import './Journal.css'
 
-export default function journal() {
+export default function Journal() {
   return (
     <div>
-      
+      Journal
     </div>
   )
 }
