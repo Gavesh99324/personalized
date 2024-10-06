@@ -10,6 +10,11 @@
     padding: 1px ;
     transition: 0.5s;
     border-radius: 25px;
+
+    background {
+        background-color: rgba(173, 216, 230, 0.6); /* Light blue with 60% opacity */
+    }
+    
 }
 
 .logo {
