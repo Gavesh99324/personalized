@@ -1,0 +1,155 @@
+.f1 {
+    width: 100%; /* Ensures the element spans the full width */
+    margin-top: 6rem; /* Equivalent to mt-24 (24 * 0.25rem = 6rem) */
+    background-color: #0f172a; /* Dark slate blue background */
+    color: #d1d5db; /* Light gray text (gray-300) */
+    padding: 0.5rem 0.5rem;
+}
+
+.f2 {
+    gap: 2rem; /* Adds equal space between grid items */
+    width: 100%; /* Full width */
+    max-width: 1240px; /* Maximum width of 1240px */
+    margin: 0 auto; /* Centers the container */
+    display: grid; /* Display as grid */
+    grid-template-columns: repeat(2, 1fr); /* Grid with 2 equal columns */
+
+    /* For medium screens and above (768px), adjust grid to 6 columns */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(6, 1fr); /* Grid with 6 equal columns */
+    }
+    
+    border-bottom: 2px solid #4b5563; /* Border-bottom with gray color */
+    padding: 2rem 0;
+}
+
+.footer-section {
+    margin-bottom: 2rem; /* Adds space between each section (title + items) */
+}
+
+.f3 {
+    margin: 0;
+    font-size: 1rem; /* Default font size for the section title */
+    font-weight: bold; /* Makes the section titles bold */
+    margin-bottom: 1rem;
+}
+
+.f4 {
+    padding-top: 0.25rem; /* Equivalent to py-1 (1 * 0.25rem = 0.25rem) */
+    padding-bottom: 0.25rem; /* Same as above */
+    color: #6b7280; /* Equivalent to text-gray-500 (gray color) */
+    cursor: pointer; /* Equivalent to cursor-pointer */
+    
+    /* Hover effect */
+    transition: color 0.3s ease; /* Optional: smooth transition */
+  }
+  
+  .f4:hover {
+    color: #ffffff; /* Equivalent to hover:text-white (white color) */
+}
+
+.f5 {
+    grid-column: span 2;
+}
+
+.f6 {
+    font-weight: bold;
+}
+
+.f7 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.f8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.f9 {
+    width: 100%;           /* Sets the width to full (100%) */
+    padding: 0.5rem;      /* Padding (typically corresponds to 8px) */
+    margin-right: 1rem;   /* Margin-right (typically corresponds to 16px) */
+    border-radius: 0.375rem; /* Medium border-radius */
+    margin-bottom: 1rem;   /* Margin-bottom (typically corresponds to 16px) */
+}
+
+
+
+.f10 {
+    padding: 0.25rem 1rem; /* Adjust padding to decrease button size */
+    margin-bottom: 1rem;
+    border: 2px solid #ffffff; /* Optional: adds a border */
+    border-radius: 0; /* Set border-radius to 0 for a box shape */
+    background-color: transparent; /* Optional: makes the background transparent */
+    color: #ffffff; /* Optional: sets text color to white */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: background-color 0.3s ease; /* Optional: adds a transition effect */
+}
+
+.f10:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: hover effect */
+    color: #87CEEB;
+}
+
+.f11 {
+    display: flex;                     /* Sets the display to flex */
+    flex-direction: column;            /* Stacks children vertically */
+    max-width: 1240px;                 /* Sets maximum width to 1240px */
+    padding-left: 0.5rem;             /* Horizontal padding (px-2) */
+    padding-right: 0.5rem;            /* Horizontal padding (px-2) */
+    padding-top: 1rem;                /* Vertical padding (py-4) */
+    padding-bottom: 1rem;             /* Vertical padding (py-4) */
+    margin-left: auto;                 /* Centers the container */
+    margin-right: auto;                /* Centers the container */
+    justify-content: space-between;    /* Distributes space between items */
+    text-align: center;                /* Centers the text */
+    color: #6b7280;                   /* Gray color (text-gray-500) */
+}
+
+/* For medium screens and above (768px), change the flex direction to row */
+@media (min-width: 768px) {
+    .f11 {
+        flex-direction: row;           /* Stacks children horizontally */
+    }
+}
+
+.f12 {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.f13 {
+    display: flex;                     /* Sets the display to flex */
+    justify-content: space-between;    /* Distributes space between flex items */
+    padding-top: 1rem;                /* Padding top (pt-4), equivalent to 16px */
+    font-size: 1.5rem;                 /* Font size (text-2xl), typically corresponds to 24px */
+}
+
+/* For medium screens and above (768px), set the width to 300px */
+@media (min-width: 640px) { /* Assuming sm corresponds to 640px */
+    .f13 {
+        width: 300px;                /* Width of 300px for small screens and above */
+    }
+}
+
+.f14 {
+    color: #ffffff;                   /* Sets the text color to white */
+    cursor: pointer;                  /* Changes the cursor to a pointer */
+    transition: color 0.3s ease;      /* Optional: adds a smooth transition effect for color changes */
+}
+
+.f14:hover {
+    color: #87CEEB;                   /* Ensures text remains white on hover */
+}
+
+ul {
+    margin: 0;
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes left padding from the list */
+}
+
+li {
+    padding-left: 0; /* Ensures no padding inside list items */
+}
+

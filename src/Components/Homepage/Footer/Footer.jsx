@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch } from 'react-icons/fa'
+import { FaFacebook, FaWhatsapp, FaInstagram, FaTwitter, FaTwitch } from 'react-icons/fa'
 
 
 const sections = [
@@ -14,7 +14,7 @@ const sections = [
   },
   {
     title: 'Helpful Resources',
-    items: ['Mental Health Resources', 'Support/Help']
+    items: ['Mental Health Resources', 'Support']
   },
   {
     title: 'Community and Support',
@@ -45,16 +45,68 @@ const items = [
   },
   {
     name: 'Github',
-    icon: FaGithub,
-    link: 'https://www.github.com',
+    icon: FaWhatsapp,
+    link: 'https://www.Whatsapp.com',
   },
 ]
 
 
 export default function Footer() {
   return (
-    <div>
-      Footer
+    <>
+    <div className='f1'>
+      <div className='f2'>
+        {
+          sections.map((section, index) => (
+            <div key={index} className='footer-section'>
+              <h6 className='f3'>
+                {section.title}
+              </h6>
+              <ul>
+                {section.items.map((item, i) => (
+                  <li key={i} className='f4'>
+                    {item}
+                  </li>
+                 )
+                )}
+              </ul>
+            </div>
+           )
+          )
+        }
+
+        <div className='f5'>
+          <p className='f6'>
+            Subscribe to Our Newsletter
+          </p>
+          <p className='f7'>
+            The latest updates, articles and resources, sent to your inbox weekly.
+          </p>
+          <form className='f8'>
+            <input type="email" placeholder='Enter email address' className='f9'/>
+            <button className='f10'>
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div className='f11'>
+        <p className='f12'>
+          © 2024 Healing Journey. All rights reserved.
+        </p>
+
+        <div className='f13'>
+          {
+            items.map((x, index) =>{
+              return <x.icon key={index} className='f14' />
+            })
+          }
+        </div>
+
+
+      </div>
     </div>
+    </>
   )
 }
