@@ -4,6 +4,8 @@ import ChatWithAssistant from "./Pages/ChatWithAssistant"
 import HomePage from "./Pages/HomePage"
 import JournalPage from "./Pages/JournalPage"
 import LoginPage from "./Pages/LoginPage"
+import Navbar from "./Components/Homepage/Navbar/Navbar";
+import Footer from "./Components/Homepage/Footer/Footer";
 
 // Routes
 
@@ -11,17 +13,20 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Chat" element={<ChatWithAssistant />} />
         <Route path="/Journal" element={<JournalPage />} />
         <Route path="/Login" element={<LoginPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
 
 export default App;
+
 
 
 

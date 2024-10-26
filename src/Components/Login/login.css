@@ -1,17 +1,20 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column; /* Ensure children stack vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Full height of the viewport */
     background: url('../../Assests/stethoscope-clipboard.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,7 +34,7 @@ body {
     transition: height .002s ease;
 }
 
-.wrapper.active{
+.wrapper.active {
     height: 520px;
 }
 
@@ -111,7 +114,6 @@ form .remember-forgot {
 .remember-forgot label input {
     accent-color: #fff;
     margin-left: 4px;
-
 }
 
 .remember-forgot a {
@@ -119,7 +121,7 @@ form .remember-forgot {
     text-decoration: none;
 }
 
-.remember-forgot a::hover {
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
@@ -150,13 +152,41 @@ form .remember-link {
     font-weight: 600;
 }
 
-.register-link p a :hover {
+.register-link p a:hover {
     text-decoration: underline;
 }
 
-
+/* Footer Styles */
+.footer {
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.9); /* Optional background */
+    position: relative; /* Position relative for stacking */
+    z-index: 1; /* Ensure it is above other elements */
+    margin-top: 20px; /* Add some space above footer */
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+
+
+/* Additional CSS for the container and footer */
+.container {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.footer {
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding */
+    background: rgba(255, 255, 255, 0.9); /* Optional background */
+    position: relative; /* Position relative for stacking */
+    z-index: 1; /* Ensure it is above other elements */
+}
