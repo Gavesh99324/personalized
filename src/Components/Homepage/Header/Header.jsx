@@ -1,11 +1,15 @@
 import React from 'react'
+import F_Doctor from '../../../Assests/F_Doctor.png';
+import './Header.css'
 
 export default function Header() {
   return (
-    <div>
-      <h1>Header image</h1>
+    <div className='Doctor'>
+        <img src={F_Doctor} alt="Header" />
     </div>
   )
 }
+
+
 
 
