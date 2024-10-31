@@ -1,7 +1,7 @@
 .f1 {
     width: 100%; /* Ensures the element spans the full width */
     margin-top: 6rem; /* Equivalent to mt-24 (24 * 0.25rem = 6rem) */
-    background-color: #3DA9FC; /* Dark slate blue background */
+    background-color: #ffffff; /* Dark slate blue background */
     color: #d1d5db; /* Light gray text (gray-300) */
     padding: 0.5rem 0.5rem;
 }
@@ -32,6 +32,7 @@
     font-size: 1rem; /* Default font size for the section title */
     font-weight: bold; /* Makes the section titles bold */
     margin-bottom: 1rem;
+    color: #000000;
 }
 
 .f4 {
@@ -45,7 +46,7 @@
   }
   
   .f4:hover {
-    color: #ffffff; /* Equivalent to hover:text-white (white color) */
+    color: #3DA9FC; /* Equivalent to hover:text-white (white color) */
 }
 
 .f5 {
@@ -54,11 +55,13 @@
 
 .f6 {
     font-weight: bold;
+    color: #000000;
 }
 
 .f7 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color: #6b7280;
 }
 
 .f8 {
@@ -79,17 +82,17 @@
 .f10 {
     padding: 0.25rem 1rem; /* Adjust padding to decrease button size */
     margin-bottom: 1rem;
-    border: 2px solid #ffffff; /* Optional: adds a border */
+    border: 2px solid #6b7280; /* Optional: adds a border */
     border-radius: 0; /* Set border-radius to 0 for a box shape */
     background-color: transparent; /* Optional: makes the background transparent */
-    color: #ffffff; /* Optional: sets text color to white */
+    color: #000000; /* Optional: sets text color to white */
     cursor: pointer; /* Changes cursor to pointer */
     transition: background-color 0.3s ease; /* Optional: adds a transition effect */
 }
 
 .f10:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Optional: hover effect */
-    color: #87CEEB;
+    color: #3DA9FC;
 }
 
 .f11 {
