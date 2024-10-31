@@ -1,0 +1,14 @@
+.profiles {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns title at the top */
+    padding-top: 20vh; /* Adjusts space from the top */
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: var(--dark);
+    text-align: center;
+  }
+  

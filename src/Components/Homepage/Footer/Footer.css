@@ -91,8 +91,9 @@
 }
 
 .f10:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: hover effect */
-    color: #3DA9FC;
+    background-color: #3DA9FC; /* Optional: hover effect */
+    color: #ffffff;
+    border: #3DA9FC;
 }
 
 .f11 {
@@ -137,13 +138,13 @@
 }
 
 .f14 {
-    color: #ffffff;                   /* Sets the text color to white */
+    color: #000000;                   /* Sets the text color to white */
     cursor: pointer;                  /* Changes the cursor to a pointer */
     transition: color 0.3s ease;      /* Optional: adds a smooth transition effect for color changes */
 }
 
 .f14:hover {
-    color: #87CEEB;                   /* Ensures text remains white on hover */
+    color: #3DA9FC;                   /* Ensures text remains white on hover */
 }
 
 ul {

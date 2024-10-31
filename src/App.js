@@ -6,6 +6,7 @@ import JournalPage from "./Pages/JournalPage"
 import LoginPage from "./Pages/LoginPage"
 import Navbar from "./Components/Homepage/Navbar/Navbar";
 import Footer from "./Components/Homepage/Footer/Footer";
+import GoTop from "./Components/GoToTop/GoTop";
 
 // Routes
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Journal" element={<JournalPage />} />
         <Route path="/Login" element={<LoginPage />} />
       </Routes>
+      <GoTop />
       <Footer />
     </Router>
   );
