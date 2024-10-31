@@ -1,7 +1,7 @@
 .f1 {
     width: 100%; /* Ensures the element spans the full width */
     margin-top: 6rem; /* Equivalent to mt-24 (24 * 0.25rem = 6rem) */
-    background-color: #0f172a; /* Dark slate blue background */
+    background-color: #3DA9FC; /* Dark slate blue background */
     color: #d1d5db; /* Light gray text (gray-300) */
     padding: 0.5rem 0.5rem;
 }

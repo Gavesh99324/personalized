@@ -1,33 +1,49 @@
-/* Reset margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 150px; /* Space between navbar and content */
+  padding-left: 50px; /* Space on the left side */
 }
 
-body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    padding-top: 60px; /* Adjust according to the height of the navbar */
+.Doctor-image {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 40px; /* Space between the image and text */
+  transform: none;
+  opacity: 1; /* Ensures no animation affects the image */
 }
 
-.Doctor {
-    width: 80%; /* Adjust the width as needed */
-    max-width: 600px; /* Set a maximum width to prevent it from getting too large */
-    height: auto; /* Allows the height to scale proportionally */
-    overflow: hidden; /* Prevent overflow */
-    display: flex; /* Use flexbox layout */
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Center items vertically in the container */
-    background-color: #ffffff; /* Background color */
-    margin-top: 50px; /* Increase this value to create more space below the navbar */
-    margin-left: 0; /* Ensure left margin is zero to avoid pushing it off-screen */
-    border-radius: 8px; /* Optional: adds rounded corners */
+.mission-statement {
+  margin-top: 50px; /* Moves mission text further down */
+  max-width: 500px; /* Controls width of the mission text */
 }
 
-.Doctor img {
-    width: auto; /* Allow the width to be determined by the max-width */
-    max-width: 250px; /* Increase the maximum width of the image */
-    height: auto; /* Maintain the aspect ratio of the image */
-    margin-right: 20px; /* Adds space between the image and other content, if any */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+.mission-statement h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  animation: typing 3s steps(30, end); /* Typing effect */
+  color: #3DA9FC;
+}
+
+.mission-statement p {
+  font-size: 1em;
+  line-height: 1.6;
+  opacity: 0;
+  animation: flowIn 2s ease-out forwards; /* Smooth flowing effect */
+  animation-delay: 0.5s; /* Optional delay */
+}
+
+@keyframes flowIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
