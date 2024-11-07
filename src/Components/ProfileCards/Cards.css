@@ -1,0 +1,137 @@
+/* Card styling */
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section with background color */
+.card-header {
+    width: 100%;
+    height: 120px;
+    background-color: #b91c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* User image styling */
+.user-image-container {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main content area */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.user-details {
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b91c1c;
+}
+
+.user-role {
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Description text */
+.user-description {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.twitter-icon {
+    background-color: #1da1f2;
+}
+
+.behance-icon {
+    background-color: #131418;
+}
+
+.linkedin-icon {
+    background-color: #0077b5;
+}
+
+/* Contact button styling */
+.contact-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    background-color: #b91c1c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container for multiple cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Adjust gap between cards */
+    justify-items: center;
+    padding: 20px;
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens, stack in two columns */
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens, stack in one column */
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

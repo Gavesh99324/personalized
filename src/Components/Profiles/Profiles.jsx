@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import './Profiles.css';
 
@@ -21,13 +22,13 @@ export default function Profiles() {
 
   return (
     <div className='profiles'>
-      <h1 className='title'>{text}</h1> {/* Display the typed text */}
+      <h1 className='title'>{text}</h1> 
     </div>
   );
 }
-
-
-
+  
+ 
+ 
 
 
 

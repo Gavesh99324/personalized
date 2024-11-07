@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/Homepage/Header/Header'
 import Profiles from '../Components/Profiles/Profiles'
+import CardGrid from '../Components/ProfileCards/CardGrid'
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
     <div>
       <Header />
       <Profiles />
+      <CardGrid />
     </div>
     </>
   )
