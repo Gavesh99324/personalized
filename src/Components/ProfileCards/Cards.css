@@ -129,6 +129,8 @@
     cursor: not-allowed;
 }
 
+
+/*
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -138,6 +140,20 @@
     max-width: 960px;
     margin: 0 auto;
 }
+*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    max-width: 960px;
+    margin: -1px auto 0 auto; /* Negative top margin to move cards closer to the title */
+}
+
+
+
 
 @media (max-width: 768px) {
     .card-container {

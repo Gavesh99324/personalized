@@ -1,16 +1,17 @@
 
-.profiles {
+  .profiles {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    padding-top: 20vh; 
-    height: 100vh;
-  }
-  
-  .title {
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 10vh; /* Reduce padding to bring title closer to cards */
+    height: auto; /* Adjust height if needed */
+}
+
+.title {
     font-size: 2rem;
     color: var(--dark);
     text-align: center;
-  }
+    margin-bottom: 1rem; /* Optional: Adjust this if more fine-tuning is needed */
+}
 
 
