@@ -1,8 +1,13 @@
+/*
 import React from "react";
 import F_Doctor from "../../Assests/F_Doctor.png";
 import "./Cards.css";
+import { CiFacebook } from "react-icons/ci";
+import { BsWhatsapp } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 
-const Card = () => {
+// Component to render a single doctor card
+const Card = ({ name, role, description }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -12,17 +17,15 @@ const Card = () => {
       </div>
       <div className="card-content">
         <div className="user-details">
-          <h3 className="user-name">John Doe</h3>
-          <p className="user-role">React Developer</p>
+          <h3 className="user-name">{name}</h3>
+          <p className="user-role">{role}</p>
         </div>
-        <p className="user-description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
+        <p className="user-description">{description}</p>
         <div className="social-icons">
-          <span className="icon twitter-icon">
+          <span className="icon facebook-icon">
             <i className="fa-brands fa-twitter"></i>
           </span>
-          <span className="icon behance-icon">
+          <span className="icon whatsApp-icon">
             <i className="fa-brands fa-behance"></i>
           </span>
           <span className="icon linkedin-icon">
@@ -38,3 +41,49 @@ const Card = () => {
 };
 
 export default Card;
+
+*/
+
+import React from "react";
+import F_Doctor from "../../Assests/F_Doctor.png";
+import "./Cards.css";
+import { CiFacebook } from "react-icons/ci";
+import { BsWhatsapp } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
+
+// Component to render a single doctor card
+const Card = ({ name, role, description }) => {
+  return (
+    <div className="card">
+      <div className="card-header">
+        <div className="user-image-container">
+          <img src={F_Doctor} alt="user" className="user-image" />
+        </div>
+      </div>
+      <div className="card-content">
+        <div className="user-details">
+          <h3 className="user-name">{name}</h3>
+          <p className="user-role">{role}</p>
+        </div>
+        <p className="user-description">{description}</p>
+        <div className="social-icons">
+          <span className="icon facebook-icon">
+            <CiFacebook size={24} color="#1877F2" />
+          </span>
+          <span className="icon whatsApp-icon">
+            <BsWhatsapp size={24} color="#25D366" />
+          </span>
+          <span className="icon linkedin-icon">
+            <AiFillLinkedin size={24} color="#0A66C2" />
+          </span>
+        </div>
+        <div className="contact-button-container">
+          <button className="contact-button">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
+

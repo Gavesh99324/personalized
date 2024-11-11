@@ -1,8 +1,9 @@
+
 .profiles {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: flex-start; /* Aligns title at the top */
-    padding-top: 20vh; /* Adjusts space from the top */
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 20vh; 
     height: 100vh;
   }
   
@@ -11,4 +12,5 @@
     color: var(--dark);
     text-align: center;
   }
-  
+
+
