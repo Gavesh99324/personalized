@@ -1,18 +1,17 @@
 
 import React from "react";
-import F_Doctor from "../../Assests/F_Doctor.png";
 import "./Cards.css";
 import { CiFacebook } from "react-icons/ci";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 
 // Component to render a single doctor card
-const Card = ({ name, role, description }) => {
+const Card = ({ name, role, description, image }) => {
   return (
     <div className="card">
       <div className="card-header">
         <div className="user-image-container">
-          <img src={F_Doctor} alt="user" className="user-image" />
+          <img src={image} alt="user" className="user-image" />
         </div>
       </div>
       <div className="card-content">

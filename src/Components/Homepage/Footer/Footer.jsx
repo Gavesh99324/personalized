@@ -14,7 +14,7 @@ const sections = [
   },
   {
     title: 'Helpful Resources',
-    items: ['Mental Health Resources', 'Support']
+    items: ['Health Resources', 'Support']
   },
   {
     title: 'Community and Support',

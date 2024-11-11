@@ -9,10 +9,12 @@ export default function Header() {
       <div className="mission-statement">
         <h2>Mission</h2>
         <p>
-          "To provide comprehensive and evidence-based Mental Health Services appropriate to the local context through state-of-the-art approaches to patient care, capacity building, advocacy, community engagement, multi-sector collaboration, and research delivered by competent and reliable staff."
+          "To provide comprehensive and evidence-based Health Services appropriate to the local context through state-of-the-art approaches to patient care, capacity building, advocacy, community engagement, multi-sector collaboration, and research delivered by competent and reliable staff."
         </p>
       </div>
     </div>
   );
 }
+
+
 
