@@ -1,0 +1,112 @@
+/*
+.privacy-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(61, 169, 252, 0.7);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.5s ease forwards;
+    z-index: 1000;
+  }
+  
+  .privacy-content {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .privacy-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .privacy-content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  */
+
+
+  /* Main container for the popup, fixed to the bottom */
+.privacy-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(61, 169, 252, 0.7);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.5s ease forwards;
+    z-index: 1000;
+  }
+  
+  /* Content area for the text */
+  .privacy-content {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Header text style */
+  .privacy-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Paragraph text style */
+  .privacy-content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Close icon style, positioned at the top-right corner of the popup */
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Ensures it's above other elements in the popup */
+  }
+  
+  /* Slide-up animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
