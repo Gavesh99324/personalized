@@ -47,3 +47,36 @@
     opacity: 1;
   }
 }
+
+.header-content {
+  margin: 120px 50px; /* Space between mission statement and header content */
+  max-width: 1000px; /* Controls width of the header content */
+}
+
+.header-content p {
+  max-width: 500px;
+  color: #8d928e;
+  margin-top: 10px;
+}
+
+.header-list {
+  list-style: none;
+  padding: 0;
+  margin: 80px 0 0 0;
+}
+
+.header-list li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.header-list li svg {
+  border: 2px solid #3DA9FC; /* Green border */
+  padding: 8px; /* Space between the icon and border */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-right: 10px; /* Space between the icon and text */
+  color: #3DA9FC; /* Icon color */
+  font-size: 2.2em; /* Adjust icon size */
+}

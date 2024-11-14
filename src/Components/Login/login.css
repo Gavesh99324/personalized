@@ -24,15 +24,21 @@ body {
     position: relative;
     width: 420px;
     height: 450px;
-    background: rgba(61, 169, 252, 0.25);
+    background: rgba(255, 255, 255, 0.6);
     border: 2px solid rgba(115, 111, 111, 0.1);
     border-radius: 10px;
     color: #000000;
     display: flex;
     align-items: center;
     overflow: hidden;
-    transition: height .002s ease;
+    transition: height .002s ease transform 0.3 ease;
     margin-top: 140px;
+}
+
+.wrapper:hover {
+    border-color: #3DA9FC; /* Change border color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: all 0.3s ease; /* Smooth transition for both border and zoom */
 }
 
 .wrapper.active {
@@ -47,6 +53,7 @@ body {
 .wrapper .form-box.login {
     transition: translate .19s ease;
     translate: 0;
+    color: #3DA9FC;
 }
 
 .wrapper.active .form-box.login {
@@ -58,6 +65,7 @@ body {
     position: absolute;
     transition: none;
     translate: 400px;
+    color: #3DA9FC;
 }
 
 .wrapper.active .form-box.register {
