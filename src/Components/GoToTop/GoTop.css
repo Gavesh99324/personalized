@@ -10,11 +10,12 @@
     z-index: 1000; /* Ensures it stays on top of other elements */
   }
   
-  
   .icon {
     color: #3DA9FC;
     font-size: 30px;
   }
+  
+
   
 
 

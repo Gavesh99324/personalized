@@ -1,4 +1,5 @@
 
+
 .header-container {
   display: flex;
   align-items: flex-start;
@@ -64,10 +65,18 @@
   margin-top: 10px;
 }
 
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
 .header-list {
   list-style: none;
   padding: 0;
-  margin: 80px 0 0 0;
+  margin: 0;
+  flex: 1;
 }
 
 .header-list li {
@@ -96,5 +105,82 @@
   font-size: 0.9rem;
   color: #8d928e;
   line-height: 1.5;
+}
+
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.Doc-Green-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 30px; 
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 8.8%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1; 
+}
+
+.learn-more-btn {
+  padding: 10px 20px;
+  background-color: #3DA9FC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.image-container:hover .learn-more-btn {
+  opacity: 1; 
+}
+
+/* Typing effect animation */
+.typing-effect {
+  display: inline-block;
+  animation: typing 0.1s steps(30, end); /* Typing animation */
+  color: #ffffff;
+}
+
+.typing-effect-line-2 {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 0.1s steps(30, end) 0.1s forwards; /* Delay of 3 seconds before starting animation */
+  color: #ffffff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1; /* Fade in effect */
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
 }
 

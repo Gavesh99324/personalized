@@ -1,6 +1,7 @@
 
 import React from 'react';
 import F_Doctor from '../../../Assests/F_Doctor.png';
+import Doc_Green from '../../../Assests/Doc_Green.jpg';
 import './Header.css';
 import { IoPersonOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
@@ -19,12 +20,12 @@ export default function Header() {
           </p>
         </div>
       </div>
-      <div>
-        <div className="header-content">
-          <h1>Welcome to Our Mental Health Centre</h1>
-          <p>
-            At our Mental Health Centre, we strive to provide exceptional mental health services to our clients, ensuring they receive the support and resources they need to live healthy, fulfilling their dreams, and thriving in the world around them.
-          </p>
+      <div className="header-content">
+        <h1>Welcome to Our Mental Health Centre</h1>
+        <p>
+          At our Mental Health Centre, we strive to provide exceptional mental health services to our clients, ensuring they receive the support and resources they need to live healthy, fulfilling their dreams, and thriving in the world around them.
+        </p>
+        <div className="content-wrapper">
           <ul className='header-list'>
             <li>
               <div className="item-name">
@@ -51,9 +52,24 @@ export default function Header() {
               <p>Comprehensive support to help manage and overcome symptoms of anxiety and depression.</p>
             </li>
           </ul>
+          
+          {/* Image container with text overlay */}
+          <div className="image-container">
+            <img className="Doc-Green-image" src={Doc_Green} alt="Doctor Green" />
+            
+            {/* Overlay text */}
+            <div className="overlay">
+              <h2>
+                <span className="typing-effect">Committed to Nurturing</span>
+                <br />
+                <span className="typing-effect-line-2">Your Inner Peace</span>
+              </h2>
+              {/* Learn More Button */}
+              <button className="learn-more-btn">Learn More</button>
+            </div>
+          </div>
         </div>
       </div>
     </>
   );
 }
-
