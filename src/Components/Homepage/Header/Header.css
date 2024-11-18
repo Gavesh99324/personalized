@@ -153,30 +153,30 @@
   bottom: 10px;
   right: 10px;
   position: absolute;
+  z-index: 2;
 }
 
 .image-container:hover .learn-more-btn {
   opacity: 1; 
 }
 
-/* Typing effect animation */
 .typing-effect {
   display: inline-block;
-  animation: typing 0.1s steps(30, end); /* Typing animation */
+  animation: typing 0.1s steps(30, end); 
   color: #ffffff;
 }
 
 .typing-effect-line-2 {
   display: inline-block;
   opacity: 0;
-  animation: typing 0.1s steps(30, end) 0.1s forwards; /* Delay of 3 seconds before starting animation */
+  animation: typing 0.1s steps(30, end) 0.1s forwards; 
   color: #ffffff;
 }
 
 @keyframes typing {
   from {
     width: 0;
-    opacity: 1; /* Fade in effect */
+    opacity: 1; 
   }
   to {
     width: 100%;
