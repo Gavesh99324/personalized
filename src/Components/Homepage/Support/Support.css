@@ -1,43 +1,55 @@
+
+
 .support-card-container {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 50px;
   }
-  
+
+
   .support-card {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 20px;
-    color: white;
-    background-color: grey;
+    color: rgb(0, 0, 0);
+    background-color: #244459;
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: 2px solid transparent; 
   }
   
   .support-card:hover {
     transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 2px solid #3DA9FC; 
   }
   
-  /* Different colors for each card */
+
   .card-1:hover {
-    background-color: green;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   
   .card-2:hover {
-    background-color: #FF7300;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   
   .card-3:hover {
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   
   .card-4:hover {
-    background-color: yellow;
+    background-color: rgba(255, 255, 255, 0.2);
   }
+
+
+  
+
+
+
   
