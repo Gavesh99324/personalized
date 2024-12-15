@@ -35,8 +35,8 @@ export const MenuItems = [
                 cName: 'dropdown-links'
             },
             {
-                title: 'Journaling',
-                url: '/journaling',
+                title: 'Journal',
+                url: '/journal',
                 cName: 'dropdown-links'
             },
             {

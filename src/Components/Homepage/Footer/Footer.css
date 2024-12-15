@@ -1,52 +1,52 @@
 .f1 {
-    width: 100%; /* Ensures the element spans the full width */
-    margin-top: 6rem; /* Equivalent to mt-24 (24 * 0.25rem = 6rem) */
-    background-color: #ffffff; /* Dark slate blue background */
-    color: #d1d5db; /* Light gray text (gray-300) */
+    width: 100%; 
+    margin-top: 6rem; 
+    background-color: #ffffff; 
+    color: #d1d5db; 
     padding: 0.5rem 0.5rem;
 }
 
 .f2 {
-    gap: 2rem; /* Adds equal space between grid items */
-    width: 100%; /* Full width */
-    max-width: 1240px; /* Maximum width of 1240px */
-    margin: 0 auto; /* Centers the container */
-    display: grid; /* Display as grid */
-    grid-template-columns: repeat(2, 1fr); /* Grid with 2 equal columns */
+    gap: 2rem; 
+    width: 100%; 
+    max-width: 1240px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
 
     /* For medium screens and above (768px), adjust grid to 6 columns */
     @media (min-width: 768px) {
       grid-template-columns: repeat(6, 1fr); /* Grid with 6 equal columns */
     }
     
-    border-bottom: 2px solid #4b5563; /* Border-bottom with gray color */
+    border-bottom: 2px solid #4b5563; 
     padding: 2rem 0;
 }
 
 .footer-section {
-    margin-bottom: 2rem; /* Adds space between each section (title + items) */
+    margin-bottom: 2rem; 
 }
 
 .f3 {
     margin: 0;
-    font-size: 1rem; /* Default font size for the section title */
-    font-weight: bold; /* Makes the section titles bold */
+    font-size: 1rem; 
+    font-weight: bold; 
     margin-bottom: 1rem;
     color: #000000;
 }
 
 .f4 {
-    padding-top: 0.25rem; /* Equivalent to py-1 (1 * 0.25rem = 0.25rem) */
-    padding-bottom: 0.25rem; /* Same as above */
-    color: #6b7280; /* Equivalent to text-gray-500 (gray color) */
-    cursor: pointer; /* Equivalent to cursor-pointer */
+    padding-top: 0.25rem; 
+    padding-bottom: 0.25rem; 
+    color: #6b7280; 
+    cursor: pointer; 
     
-    /* Hover effect */
-    transition: color 0.3s ease; /* Optional: smooth transition */
+    
+    transition: color 0.3s ease; 
   }
   
   .f4:hover {
-    color: #3DA9FC; /* Equivalent to hover:text-white (white color) */
+    color: #3DA9FC; 
 }
 
 .f5 {
@@ -70,51 +70,51 @@
 }
 
 .f9 {
-    width: 100%;           /* Sets the width to full (100%) */
-    padding: 0.5rem;      /* Padding (typically corresponds to 8px) */
-    margin-right: 1rem;   /* Margin-right (typically corresponds to 16px) */
-    border-radius: 0.375rem; /* Medium border-radius */
-    margin-bottom: 1rem;   /* Margin-bottom (typically corresponds to 16px) */
+    width: 100%;           
+    padding: 0.5rem;      
+    margin-right: 1rem;   
+    border-radius: 0.375rem; 
+    margin-bottom: 1rem;   
 }
 
 
 
 .f10 {
-    padding: 0.25rem 1rem; /* Adjust padding to decrease button size */
+    padding: 0.25rem 1rem; 
     margin-bottom: 1rem;
-    border: 2px solid #6b7280; /* Optional: adds a border */
-    border-radius: 0; /* Set border-radius to 0 for a box shape */
-    background-color: transparent; /* Optional: makes the background transparent */
-    color: #000000; /* Optional: sets text color to white */
-    cursor: pointer; /* Changes cursor to pointer */
-    transition: background-color 0.3s ease; /* Optional: adds a transition effect */
+    border: 2px solid #6b7280; 
+    border-radius: 0; 
+    background-color: transparent; 
+    color: #000000; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .f10:hover {
-    background-color: #3DA9FC; /* Optional: hover effect */
+    background-color: #3DA9FC; 
     color: #ffffff;
     border: #3DA9FC;
 }
 
 .f11 {
-    display: flex;                     /* Sets the display to flex */
-    flex-direction: column;            /* Stacks children vertically */
-    max-width: 1240px;                 /* Sets maximum width to 1240px */
-    padding-left: 0.5rem;             /* Horizontal padding (px-2) */
-    padding-right: 0.5rem;            /* Horizontal padding (px-2) */
-    padding-top: 1rem;                /* Vertical padding (py-4) */
-    padding-bottom: 1rem;             /* Vertical padding (py-4) */
-    margin-left: auto;                 /* Centers the container */
-    margin-right: auto;                /* Centers the container */
-    justify-content: space-between;    /* Distributes space between items */
-    text-align: center;                /* Centers the text */
-    color: #6b7280;                   /* Gray color (text-gray-500) */
+    display: flex;                     
+    flex-direction: column;            
+    max-width: 1240px;                 
+    padding-left: 0.5rem;             
+    padding-right: 0.5rem;            
+    padding-top: 1rem;                
+    padding-bottom: 1rem;             
+    margin-left: auto;                 
+    margin-right: auto;                
+    justify-content: space-between;    
+    text-align: center;                
+    color: #6b7280;                   
 }
 
 /* For medium screens and above (768px), change the flex direction to row */
 @media (min-width: 768px) {
     .f11 {
-        flex-direction: row;           /* Stacks children horizontally */
+        flex-direction: row;           
     }
 }
 
@@ -124,36 +124,36 @@
 }
 
 .f13 {
-    display: flex;                     /* Sets the display to flex */
-    justify-content: space-between;    /* Distributes space between flex items */
-    padding-top: 1rem;                /* Padding top (pt-4), equivalent to 16px */
-    font-size: 1.5rem;                 /* Font size (text-2xl), typically corresponds to 24px */
+    display: flex;                     
+    justify-content: space-between;    
+    padding-top: 1rem;                
+    font-size: 1.5rem;                 
 }
 
 /* For medium screens and above (768px), set the width to 300px */
-@media (min-width: 640px) { /* Assuming sm corresponds to 640px */
+@media (min-width: 640px) { 
     .f13 {
-        width: 300px;                /* Width of 300px for small screens and above */
+        width: 300px;                
     }
 }
 
 .f14 {
-    color: #000000;                   /* Sets the text color to white */
-    cursor: pointer;                  /* Changes the cursor to a pointer */
-    transition: color 0.3s ease;      /* Optional: adds a smooth transition effect for color changes */
+    color: #000000;                   
+    cursor: pointer;                  
+    transition: color 0.3s ease;      
 }
 
 .f14:hover {
-    color: #3DA9FC;                   /* Ensures text remains white on hover */
+    color: #3DA9FC;                   
 }
 
 ul {
     margin: 0;
-    list-style-type: none; /* Removes bullet points */
-    padding-left: 0; /* Removes left padding from the list */
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
 li {
-    padding-left: 0; /* Ensures no padding inside list items */
+    padding-left: 0; 
 }
 

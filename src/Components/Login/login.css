@@ -11,10 +11,10 @@
 body {
     font-family: "Poppins", sans-serif;
     display: flex;
-    flex-direction: column; /* Ensure children stack vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 100vh; /* Full height of the viewport */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
     background: url('../../Assests/stethoscope-clipboard.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,9 +36,9 @@ body {
 }
 
 .wrapper:hover {
-    border-color: #3DA9FC; /* Change border color on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-    transition: all 0.3s ease; /* Smooth transition for both border and zoom */
+    border-color: #3DA9FC; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
 }
 
 .wrapper.active {
@@ -167,13 +167,13 @@ form .remember-link {
 
 /* Footer Styles */
 .footer {
-    width: 100%; /* Full width of the container */
-    text-align: center; /* Center text */
-    padding: 20px; /* Add some padding */
-    background: rgba(255, 255, 255, 0.9); /* Optional background */
-    position: relative; /* Position relative for stacking */
-    z-index: 1; /* Ensure it is above other elements */
-    margin-top: 20px; /* Add some space above footer */
+    width: 100%; 
+    text-align: center; 
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.9); 
+    position: relative; 
+    z-index: 1; 
+    margin-top: 20px; 
 }
 
 code {
@@ -185,17 +185,19 @@ code {
 /* Additional CSS for the container and footer */
 .container {
     display: flex;
-    flex-direction: column; /* Align children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 100vh; /* Full height of the viewport */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
 
 .footer {
-    width: 100%; /* Full width of the container */
-    text-align: center; /* Center text */
-    padding: 20px; /* Add some padding */
-    background: rgba(255, 255, 255, 0.9); /* Optional background */
-    position: relative; /* Position relative for stacking */
-    z-index: 1; /* Ensure it is above other elements */
+    width: 100%; 
+    text-align: center; 
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.9); 
+    position: relative; 
+    z-index: 1; 
 }
+
+

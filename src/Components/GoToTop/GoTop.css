@@ -7,7 +7,7 @@
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    z-index: 1000; 
   }
   
   .icon {

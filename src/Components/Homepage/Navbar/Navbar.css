@@ -27,7 +27,7 @@
     font-size: 1.2rem;
     position: fixed;
     top: 0;
-    left: 0; /* Aligns navbar to the left edge */
+    left: 0; 
     z-index: 1000;
     font-family: 'PT Sans', sans-serif;
 }
@@ -41,7 +41,7 @@
 }
 
 .nav-menu {
-    display: flex; /* Flex layout for easier control */
+    display: flex; 
     justify-content: end;
     list-style: none;
     text-align: center;

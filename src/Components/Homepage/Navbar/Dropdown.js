@@ -7,7 +7,7 @@ const Dropdown = () => {
   const dropdownItems = [
     { title: 'Mood Tracking', url: '/' },
     { title: 'Guided Exercises', url: '/journal' },
-    { title: 'Journaling', url: '/journal' },
+    { title: 'Journal', url: '/journal' },
     { title: 'AI-Powered Insights', url: '/Chatbot' },
     { title: 'Resource Library', url: '/journal' }
   ];
