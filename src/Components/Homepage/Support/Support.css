@@ -64,33 +64,33 @@
 }
 
 .support-card:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(125, 120, 120, 0.2);
 }
 
 .card-1 .card-title {
   position: absolute;
-  font-size: 18px;
+  font-size: 15px;
   bottom: 10px;
   left: 10px;
 }
   
 .card-2 .card-title {
   position: absolute;
-  font-size: 18px;
+  font-size: 15px;
   bottom: 10px;
   left: 10px;
 }
   
 .card-3 .card-title {
   position: absolute;
-  font-size: 18px;
+  font-size: 15px;
   bottom: 10px;
   left: 10px;
 }
   
 .card-4 .card-title {
   position: absolute;
-  font-size: 18px;
+  font-size: 15px;
   bottom: 10px;
   left: 10px;
 }
