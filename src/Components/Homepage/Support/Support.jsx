@@ -11,23 +11,24 @@ export default function Support() {
     <div className="support-card-container">
       <div className="support-card card-1">
         <IoDocumentTextOutline className="card-icon" />
-        <h3>Card 1</h3>
+        <h3 className='card-title'>Initial Assessment</h3>
       </div>
       <div className="support-card card-2">
         <IoMdPaperPlane className="card-icon" />
-        <h3>Card 2</h3>
+        <h3 className='card-title'>Custom Plan</h3>
       </div>
       <div className="support-card card-3">
         <IoSettingsOutline className="card-icon" />
-        <h3>Card 3</h3>
+        <h3 className='card-title'>Continual Guidance</h3>
       </div>
       <div className="support-card card-4">
         <VscGraph className="card-icon" />
-        <h3>Card 4</h3>
+        <h3 className='card-title'>Monitoring & Growth</h3>
       </div>
     </div>
   );
 }
+
 
 
 
