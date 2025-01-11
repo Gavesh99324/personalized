@@ -1,10 +1,27 @@
 
 
+.support-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.support-header h2 {
+  font-size: 30px;
+  color: #000000;
+  margin: 0;
+  text-align: left;
+  padding-left: 110px;
+}
+
+.support-header h2:nth-child(2) {
+  margin-top: 10px;
+}
+
 .support-card-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .support-card {
@@ -21,77 +38,52 @@
   transition: all 0.3s ease;
   cursor: pointer;
   border: 2px solid transparent;
-  position: relative; 
+  position: relative;
 }
 
 .support-card:hover {
   transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid #3DA9FC;
-}
-
-
-.card-1 .card-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 24px; 
-  color: #BC8F8F; 
-}
-
-.card-2 .card-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 24px; 
-  color: #BC8F8F; 
-}
-
-.card-3 .card-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 24px; 
-  color: #BC8F8F; 
-}
-
-.card-4 .card-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 24px; 
-  color: #BC8F8F; 
-}
-
-.support-card:hover {
   background-color: rgba(125, 120, 120, 0.2);
+  border: 2px solid #ffffff;
 }
 
-.card-1 .card-title {
+.card-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #BC8F8F;
+}
+
+.card-title {
   position: absolute;
   font-size: 15px;
   bottom: 10px;
   left: 10px;
 }
-  
-.card-2 .card-title {
+
+.card-number {
   position: absolute;
   font-size: 15px;
-  bottom: 10px;
+  bottom: 30px;
   left: 10px;
+  color: #ffffff;
 }
-  
-.card-3 .card-title {
-  position: absolute;
-  font-size: 15px;
-  bottom: 10px;
-  left: 10px;
+
+
+.image-container {
+  margin-top: 30px;
+  text-align: center;
 }
-  
-.card-4 .card-title {
-  position: absolute;
-  font-size: 15px;
-  bottom: 10px;
-  left: 10px;
+
+.background-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
+
+
+
+
+
 
