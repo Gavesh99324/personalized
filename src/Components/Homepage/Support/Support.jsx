@@ -84,8 +84,8 @@ export default function Support() {
           <h3 className="card-title">Monitoring & Growth</h3>
         </div>
       </div>
-      <div className="image-container">
-        <img src={BgofHome} alt="Background" className="background-image" />
+      <div className="image">
+        <img src={BgofHome} alt="Background" className="bg-image" />
       </div>
     </div>
   );
