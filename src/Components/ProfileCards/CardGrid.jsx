@@ -1,5 +1,7 @@
 
-import React from "react";
+
+
+import React, { useState } from "react";
 import Card from "./Cards"; // Import the Card component
 import "./Cards.css";
 import John from "../../Assests/John.jpeg";
@@ -11,7 +13,6 @@ import Michael from "../../Assests/Michael.jpeg";
 import Linda from "../../Assests/Linda.jpeg";
 import William from "../../Assests/William.jpeg";
 import Lisa from "../../Assests/Lisa.jpeg";
-
 
 // Array of doctor profiles
 const doctors = [
@@ -26,25 +27,36 @@ const doctors = [
   { name: "Dr. Lisa Martinez", role: "Ophthalmologist", description: "Expert in eye health and vision care.", image: Lisa },
 ];
 
-// Component to render a grid of doctor cards
+// Component to render a single card with navigation
 const CardGrid = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % doctors.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? doctors.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <div className="card-container">
-      {doctors.map((doctor, index) => (
-        <Card 
-          key={index} 
-          name={doctor.name} 
-          role={doctor.role} 
-          description={doctor.description}
-          image={doctor.image} 
-        />
-      ))}
+    <div className="carousel-container">
+      <button className="arrow left-arrow" onClick={handlePrevious}>
+        &#8592;
+      </button>
+      <Card
+        name={doctors[currentIndex].name}
+        role={doctors[currentIndex].role}
+        description={doctors[currentIndex].description}
+        image={doctors[currentIndex].image}
+      />
+      <button className="arrow right-arrow" onClick={handleNext}>
+        &#8594;
+      </button>
     </div>
   );
 };
 
 export default CardGrid;
-
-
-
-

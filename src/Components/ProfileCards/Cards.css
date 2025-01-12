@@ -1,4 +1,15 @@
 
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+}
+
 .card {
     width: 300px;
     background-color: #ffffff;
@@ -129,46 +140,35 @@
     cursor: not-allowed;
 }
 
-
-/*
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    padding: 20px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-*/
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    padding: 20px;
-    max-width: 960px;
-    margin: -1px auto 0 auto; /* Negative top margin to move cards closer to the title */
+.arrow {
+    background: rgba(61, 169, 252, 0.7); 
+    border: 2px solid #ffffff;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 15px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
 }
 
-
-
-
-@media (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.arrow:hover {
+    transform: scale(1.2);
+    background-color: rgba(61, 169, 252, 0.7); 
 }
 
-@media (max-width: 480px) {
-    .card-container {
-        grid-template-columns: 1fr;
-    }
+.left-arrow {
+    position: absolute;
+    left: 300px;
 }
 
-
-
-
-
+.right-arrow {
+    position: absolute;
+    right: 300px;
+}
 
