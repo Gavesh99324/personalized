@@ -7,6 +7,8 @@ import Doc from '../../Assests/Doc.jpg';
 import Anxity from '../../Assests/Anxity.jpg';
 import EMDR from '../../Assests/EMDR.jpg';
 import Therapy from '../../Assests/Therapy.jpg'
+import { PiArrowSquareInThin } from "react-icons/pi";
+
 
 export default function Journal() {
   return (
@@ -70,11 +72,30 @@ export default function Journal() {
         <h2 className='topic'>Healing Narratives: See the</h2>
         <h2 className='topic'>Impact of Our Approach</h2>
       </div>
-      <div className='med-images'>
-        <img className='med1' src={Anxity} alt="anxity" />
-        <img className='med2' src={Therapy} alt="therapy" />
-        <img className='med3' src={EMDR} alt="emdr" />
+      <div className="med-images">
+       <div className="image-cont">
+         <button className="overlay-button">
+           <span className="line1">Overcoming Anxiety</span>
+           <span className="line2">Through Mindfulness</span>
+         </button>
+         <img className="med1" src={Anxity} alt="anxity" />
+       </div>
+       <div className="image-cont">
+         <button className="overlay-button">
+           <span className="line1">Managing Depression</span>
+           <span className="line2">With Therapy</span>
+         </button>
+         <img className="med2" src={Therapy} alt="therapy" />
+       </div>
+       <div className="image-cont">
+         <button className="overlay-button">
+           <span className="line1">Healing from Trauma </span> 
+           <span className="line2">Through EMDR</span>
+         </button>
+         <img className="med3" src={EMDR} alt="emdr" />
+       </div>
       </div>
     </>
   );
 }
+

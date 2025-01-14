@@ -89,18 +89,10 @@
   margin-left: 50px; 
 }
 
-.header-subtitle {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: 50px;
-}
-
 .input-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0;
   width: 100%;
   margin-left: 40px;
   margin-right: 4px;
@@ -185,22 +177,124 @@ h5 {
   margin-top: 50px;
   text-align: left;
   padding-top: 70px;
+  padding-bottom: 50px;
   color: #244459;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .med-images {
-  display: flex; 
-  justify-content: space-around; 
-  gap: 1px; 
-  margin-top: 20px; 
+  display: flex;
+  justify-content: space-around;
+  gap: 0.1rem;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.med-images img {
+.image-cont {
+  position: relative;
   width: 30%; 
-  height: auto;
-  object-fit: cover; 
-  border-radius: 8px; 
 }
+
+.image-cont img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/*
+.image-cont .overlay-button {
+  position: absolute;
+  top: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #244459; 
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-cont .overlay-button .line1 {
+  font-size: 15px; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.image-cont .overlay-button .line2 {
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+.image-cont .overlay-button:hover {
+  background-color: #244459; 
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+*/
+
+
+.image-cont .overlay-button {
+  position: absolute;
+  top: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #244459; 
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-cont .overlay-button .line1 {
+  font-size: 15px; 
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.image-cont .overlay-button .line2 {
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+.image-cont .overlay-button .pi {
+  margin-left: auto; /* Pushes icon to the right side */
+  margin-top: 5px; /* Adjusts the vertical alignment */
+}
+
+.image-cont .overlay-button:hover {
+  background-color: #244459; 
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+
+
+
+
+
 
