@@ -77,6 +77,7 @@ export default function Journal() {
          <button className="overlay-button">
            <span className="line1">Overcoming Anxiety</span>
            <span className="line2">Through Mindfulness</span>
+           {<PiArrowSquareInThin className='arrow-icon'/>}
          </button>
          <img className="med1" src={Anxity} alt="anxity" />
        </div>
@@ -84,6 +85,7 @@ export default function Journal() {
          <button className="overlay-button">
            <span className="line1">Managing Depression</span>
            <span className="line2">With Therapy</span>
+           {<PiArrowSquareInThin className='arrow-icon'/>}
          </button>
          <img className="med2" src={Therapy} alt="therapy" />
        </div>
@@ -91,6 +93,7 @@ export default function Journal() {
          <button className="overlay-button">
            <span className="line1">Healing from Trauma </span> 
            <span className="line2">Through EMDR</span>
+           {<PiArrowSquareInThin className='arrow-icon'/>}
          </button>
          <img className="med3" src={EMDR} alt="emdr" />
        </div>
