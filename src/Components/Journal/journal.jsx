@@ -4,6 +4,9 @@ import React from 'react';
 import './Journal.css';
 import Appointment from '../../Assests/Appointment.jpg';
 import Doc from '../../Assests/Doc.jpg';
+import Anxity from '../../Assests/Anxity.jpg';
+import EMDR from '../../Assests/EMDR.jpg';
+import Therapy from '../../Assests/Therapy.jpg'
 
 export default function Journal() {
   return (
@@ -57,8 +60,20 @@ export default function Journal() {
               <h5>Message</h5>
               <textarea placeholder="Message"></textarea>
             </div>
+            <div>
+              <button className='appointment-btn'>Book an Appointment</button>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="ap-header">
+        <h2 className='topic'>Healing Narratives: See the</h2>
+        <h2 className='topic'>Impact of Our Approach</h2>
+      </div>
+      <div className='med-images'>
+        <img className='med1' src={Anxity} alt="anxity" />
+        <img className='med2' src={Therapy} alt="therapy" />
+        <img className='med3' src={EMDR} alt="emdr" />
       </div>
     </>
   );
