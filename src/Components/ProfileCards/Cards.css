@@ -141,10 +141,10 @@
 }
 
 .arrow {
-    background: rgba(61, 169, 252, 0.7); 
+    background: rgba(216, 213, 213, 0.7); 
     border: 2px solid #ffffff;
     font-size: 2rem;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
     padding: 15px;

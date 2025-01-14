@@ -13,6 +13,9 @@ import Michael from "../../Assests/Michael.jpeg";
 import Linda from "../../Assests/Linda.jpeg";
 import William from "../../Assests/William.jpeg";
 import Lisa from "../../Assests/Lisa.jpeg";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 // Array of doctor profiles
 const doctors = [
@@ -44,7 +47,7 @@ const CardGrid = () => {
   return (
     <div className="carousel-container">
       <button className="arrow left-arrow" onClick={handlePrevious}>
-        &#8592;
+        <IoIosArrowBack/>
       </button>
       <Card
         name={doctors[currentIndex].name}
@@ -53,7 +56,7 @@ const CardGrid = () => {
         image={doctors[currentIndex].image}
       />
       <button className="arrow right-arrow" onClick={handleNext}>
-        &#8594;
+        <IoIosArrowForward/>
       </button>
     </div>
   );
