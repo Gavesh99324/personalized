@@ -186,7 +186,7 @@ h5 {
 .med-images {
   display: flex;
   justify-content: space-around;
-  gap: 0.1rem;
+  gap: 0.001rem;
   margin-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -204,8 +204,6 @@ h5 {
   border-radius: 8px;
 }
 
-
-/*
 .image-cont .overlay-button {
   position: absolute;
   top: -20px; 
@@ -223,61 +221,19 @@ h5 {
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 2;
   width: 100%;
-  max-width: 250px;
+  max-width: 220px;
   display: flex;
   flex-direction: column;
 }
 
 .image-cont .overlay-button .line1 {
-  font-size: 15px; 
+  font-size: 10px; 
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .image-cont .overlay-button .line2 {
-  font-size: 15px; 
-  font-weight: bold;
-}
-
-.image-cont .overlay-button:hover {
-  background-color: #244459; 
-  transform: translateX(-50%) scale(1.05);
-}
-
-
-*/
-
-
-.image-cont .overlay-button {
-  position: absolute;
-  top: -20px; 
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #244459; 
-  color: #ffffff;
-  font-size: 10px;
-  font-weight: bold;
-  text-align: left;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 2;
-  width: 100%;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-}
-
-.image-cont .overlay-button .line1 {
-  font-size: 15px; 
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.image-cont .overlay-button .line2 {
-  font-size: 15px; 
+  font-size: 10px; 
   font-weight: bold;
 }
 
@@ -306,6 +262,7 @@ h5 {
   display: flex;
   justify-content: right;
 }
+
 
 
 
