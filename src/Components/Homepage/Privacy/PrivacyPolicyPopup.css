@@ -23,7 +23,7 @@
    /* Header text style */
   .privacy-content h3 {
     position: absolute;
-    top: 10px; /* Adjust this value as needed */
+    top: 10px; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;

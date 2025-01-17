@@ -8,6 +8,7 @@ import Anxity from '../../Assests/Anxity.jpg';
 import EMDR from '../../Assests/EMDR.jpg';
 import Therapy from '../../Assests/Therapy.jpg'
 import { PiArrowSquareInThin } from "react-icons/pi";
+import ShakeHand from '../../Assests/ShakeHand.jpg';
 
 
 export default function Journal() {
@@ -97,6 +98,9 @@ export default function Journal() {
          </button>
          <img className="med3" src={EMDR} alt="emdr" />
        </div>
+      </div>
+      <div className='shake-hand-container'>
+        <img className='shake-hand' src={ShakeHand} alt="ShakeHands" />
       </div>
     </>
   );
