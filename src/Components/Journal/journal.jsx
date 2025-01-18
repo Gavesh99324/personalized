@@ -11,7 +11,8 @@ import { PiArrowSquareInThin } from "react-icons/pi";
 import ShakeHand from '../../Assests/ShakeHand.jpg';
 import { IoLogoApple } from "react-icons/io";
 import LayerPic from '../../Assests/LayerPic.jpg';
-
+import { IoPeopleOutline } from "react-icons/io5";
+import Emily from '../../Assests/Emily.jpeg';
 
 
 
@@ -109,10 +110,35 @@ export default function Journal() {
         <h4 className='shake-hand-header'>Track Your Mental Health <br />and Discover Happiness</h4>
         <button className='app-btn'>{<IoLogoApple className='apple-icon'/>} Download App</button>
         <img className='layerPic' src={LayerPic} alt="AppWall" />
+
+        <div className='bookAppointment'>
+          <img className='therapist' src={Emily} alt="therapist" />
+          <h2>Sophia Green</h2>
+          <h6>Licensed Therapist</h6>
+         <div>
+          <input type="Date" name="Date" id="date" />
+         </div>
+         <div>
+          <input type="time" placeholder="Time" />
+         </div>
+         <button className='book-btn'>Book An Appointment</button>
+         {<IoPeopleOutline className='people-icon'/>}
+        </div>
       </div>
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

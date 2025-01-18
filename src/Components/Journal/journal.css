@@ -344,3 +344,69 @@ h5 {
   border-radius: 20px;
 }
 
+
+
+.bookAppointment {
+  position: absolute;
+  right: 70px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  text-align: center;
+}
+
+.bookAppointment h2 {
+  font-size: 1.5rem;
+  color: #244459;
+}
+
+.bookAppointment h6 {
+  font-size: 1rem;
+  color: #96409c;
+  margin-bottom: 10px;
+}
+
+.bookAppointment input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-btn {
+  background-color: #244459;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.people-icon {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  left: 5%;
+  margin-left: 0.2px;
+  margin-top: 2px;
+  padding-top: 1px;
+  z-index: 2;
+  color: blueviolet;
+}
+
+.therapist {
+  position: absolute;
+  right: 183px; /* Adjust as needed */
+  top: 10%;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+}
+
