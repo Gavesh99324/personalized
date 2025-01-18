@@ -288,5 +288,47 @@ h5 {
   pointer-events: none; 
 }
 
+.shake-hand-header {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 45%;
+  left: 25%;
+  bottom: 1%;
+}
 
+.app-btn {
+  position: absolute;
+  background-color: #244459;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: right;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 16.5%;
+}
+.app-btn:hover {
+  background-color: #3DA9FC;
+}
+
+.apple-icon {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  left: 0.5%;
+  margin-left: 0.2px;
+  margin-top: 2px;
+  padding-top: 1px;
+  z-index: 2;
+}
 
