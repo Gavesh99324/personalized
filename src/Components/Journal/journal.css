@@ -317,6 +317,7 @@ h5 {
   top: 80%;
   left: 16.5%;
 }
+
 .app-btn:hover {
   background-color: #3DA9FC;
 }
@@ -330,5 +331,16 @@ h5 {
   margin-top: 2px;
   padding-top: 1px;
   z-index: 2;
+}
+
+.layerPic {
+  position: absolute;
+  right: 300px;
+  width: 180px;
+  height: 360px;
+  bottom: 20px;
+  top: -50px;
+  z-index: 2;
+  border-radius: 20px;
 }
 

@@ -10,6 +10,9 @@ import Therapy from '../../Assests/Therapy.jpg'
 import { PiArrowSquareInThin } from "react-icons/pi";
 import ShakeHand from '../../Assests/ShakeHand.jpg';
 import { IoLogoApple } from "react-icons/io";
+import LayerPic from '../../Assests/LayerPic.jpg';
+
+
 
 
 
@@ -105,6 +108,7 @@ export default function Journal() {
         <img className='shake-hand' src={ShakeHand} alt="ShakeHands" />
         <h4 className='shake-hand-header'>Track Your Mental Health <br />and Discover Happiness</h4>
         <button className='app-btn'>{<IoLogoApple className='apple-icon'/>} Download App</button>
+        <img className='layerPic' src={LayerPic} alt="AppWall" />
       </div>
     </>
   );
