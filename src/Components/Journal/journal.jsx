@@ -25,12 +25,12 @@ import { TbMessage2 } from "react-icons/tb";
 export default function Journal() {
 
   const header = [
-    { icon: <FaRegHandshake />, title: 'Start Your Healing Journey', information: '' },
-    { icon: <HiOutlineQuestionMarkCircle />, title: 'Mental Health FAQs', information: '' },
-    { icon: <HiOutlineLightBulb />, title: 'Wellness Knowledge Base', information: '' },
-    { icon: <MdSlowMotionVideo />, title: 'Guided Videos', information: '' },
-    { icon: <HiOutlineQuestionMarkCircle />, title: 'My Mental Health Questions', information: '' },
-    { icon: <TbMessage2 />, title: 'Live Support Chat', information: '' },
+    { icon: <FaRegHandshake className='icon-style-same'/>, title: 'Start Your Healing Journey', information: 'Discover essential steps to enhance your mental health, leading to peaceful and balanced life.' },
+    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'Mental Health FAQs', information: '' },
+    { icon: <HiOutlineLightBulb className='icon-style'/>, title: 'Wellness Knowledge Base', information: '' },
+    { icon: <MdSlowMotionVideo className='icon-style-same'/>, title: 'Guided Videos', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'My Mental Health Questions', information: '' },
+    { icon: <TbMessage2 className='icon-style'/>, title: 'Live Support Chat', information: '' },
   ]
 
 
@@ -157,8 +157,8 @@ export default function Journal() {
     <div className='detail-cards-container'>
       {header.map((item, index) => (
         <div className='detail-card' key={index}>
-          <h6>{item.icon} {item.title}</h6>
-          <p>{item.information}</p>
+          <h6 className='detail-card-title'>{item.icon} {item.title}</h6>
+          <p className='detail-card-info'>{item.information}</p>
         </div>
       ))}
     </div>
@@ -166,6 +166,11 @@ export default function Journal() {
     </>
   );
 }
+
+
+
+
+
 
 
 
