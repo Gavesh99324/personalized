@@ -26,11 +26,11 @@ export default function Journal() {
 
   const header = [
     { icon: <FaRegHandshake className='icon-style-same'/>, title: 'Start Your Healing Journey', information: 'Discover essential steps to enhance your mental health, leading to peaceful and balanced life.' },
-    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'Mental Health FAQs', information: '' },
-    { icon: <HiOutlineLightBulb className='icon-style'/>, title: 'Wellness Knowledge Base', information: '' },
-    { icon: <MdSlowMotionVideo className='icon-style-same'/>, title: 'Guided Videos', information: '' },
-    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'My Mental Health Questions', information: '' },
-    { icon: <TbMessage2 className='icon-style'/>, title: 'Live Support Chat', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'Mental Health FAQs', information: 'Access answers to frequently asked questions about mental wellness, treatment options, and available support services.' },
+    { icon: <HiOutlineLightBulb className='icon-style'/>, title: 'Wellness Knowledge Base', information: 'Explore a wide range of resources and articles to empower your mental health journey and wellbeing.' },
+    { icon: <MdSlowMotionVideo className='icon-style-same'/>, title: 'Guided Videos', information: 'Engage with videos that offer relaxation, mindfulness, and meditation techniques to improve mental wellness.' },
+    { icon: <HiOutlineQuestionMarkCircle className='icon-style'/>, title: 'My Mental Health Questions', information: 'Review your submitted inquiries, track responses, and receive personalized mental health support and guidance.' },
+    { icon: <TbMessage2 className='icon-style'/>, title: 'Live Support Chat', information: 'Get immediate assistance and personalized advice from a mental health professional through real-time chat.' },
   ]
 
 
