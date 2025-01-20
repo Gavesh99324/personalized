@@ -470,3 +470,44 @@ h5 {
 .search-button:hover {
   background-color: #244459;
 }
+
+
+
+
+.detail-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Spacing between cards */
+  margin-top: 40px;
+  padding: 0 10%;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.2); /* Light glassmorphism effect */
+  padding: 20px;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-color: #cb6caf;
+  border-width: 0.5px;
+  border-style: solid;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .detail-cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-cards-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+  }
+}
+

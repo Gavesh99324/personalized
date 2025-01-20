@@ -22,19 +22,15 @@ import { MdSlowMotionVideo } from "react-icons/md";
 import { TbMessage2 } from "react-icons/tb";
 
 
-
-
-
-
 export default function Journal() {
 
   const header = [
-    { icon: <FaRegHandshake />, text: 'Start Your Healing Journey', information: '' },
-    { icon: <HiOutlineQuestionMarkCircle />, text: 'Mental Health FAQs', information: '' },
-    { icon: <HiOutlineLightBulb />, text: 'Wellness Knowledge Base', information: '' },
-    { icon: <MdSlowMotionVideo />, text: 'Guided Videos', information: '' },
-    { icon: <HiOutlineQuestionMarkCircle />, text: 'My Mental Health Questions', information: '' },
-    { icon: <TbMessage2 />, text: 'Live Support Chat', information: '' },
+    { icon: <FaRegHandshake />, title: 'Start Your Healing Journey', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle />, title: 'Mental Health FAQs', information: '' },
+    { icon: <HiOutlineLightBulb />, title: 'Wellness Knowledge Base', information: '' },
+    { icon: <MdSlowMotionVideo />, title: 'Guided Videos', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle />, title: 'My Mental Health Questions', information: '' },
+    { icon: <TbMessage2 />, title: 'Live Support Chat', information: '' },
   ]
 
 
@@ -157,15 +153,21 @@ export default function Journal() {
       </div>
     </div>
 
-    <div className='detail-cards'>
-      {headers.map(header) => (
 
-      )}
+    <div className='detail-cards-container'>
+      {header.map((item, index) => (
+        <div className='detail-card' key={index}>
+          <h6>{item.icon} {item.title}</h6>
+          <p>{item.information}</p>
+        </div>
+      ))}
     </div>
 
     </>
   );
 }
+
+
 
 
 
