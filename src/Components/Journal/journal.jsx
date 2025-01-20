@@ -13,11 +13,31 @@ import { IoLogoApple } from "react-icons/io";
 import LayerPic from '../../Assests/LayerPic.jpg';
 import { IoPeopleOutline } from "react-icons/io5";
 import Emily from '../../Assests/Emily.jpeg';
+import { IoSearch } from "react-icons/io5";
+
+import { FaRegHandshake } from "react-icons/fa";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { MdSlowMotionVideo } from "react-icons/md";
+import { TbMessage2 } from "react-icons/tb";
+
+
 
 
 
 
 export default function Journal() {
+
+  const header = [
+    { icon: <FaRegHandshake />, text: 'Start Your Healing Journey', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle />, text: 'Mental Health FAQs', information: '' },
+    { icon: <HiOutlineLightBulb />, text: 'Wellness Knowledge Base', information: '' },
+    { icon: <MdSlowMotionVideo />, text: 'Guided Videos', information: '' },
+    { icon: <HiOutlineQuestionMarkCircle />, text: 'My Mental Health Questions', information: '' },
+    { icon: <TbMessage2 />, text: 'Live Support Chat', information: '' },
+  ]
+
+
   return (
     <>
       <div className="header-image">
@@ -125,6 +145,24 @@ export default function Journal() {
          {<IoPeopleOutline className='people-icon'/>}
         </div>
       </div>
+      <div className='search-bar'>
+        <h4>How can we help you?</h4>
+      </div>
+      <div className="search-wrapper"> {/* Centering wrapper */}
+      <div className="search-container">
+        <input type="text" className="search-input" placeholder="Search..." />
+        <button className="search-button">
+          <IoSearch />
+        </button>
+      </div>
+    </div>
+
+    <div className='detail-cards'>
+      {headers.map(header) => (
+
+      )}
+    </div>
+
     </>
   );
 }

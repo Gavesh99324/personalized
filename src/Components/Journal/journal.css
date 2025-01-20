@@ -389,6 +389,10 @@ h5 {
   margin-top: 10px;
 }
 
+.book-btn:hover {
+  background-color: #3DA9FC;
+}
+
 .people-icon {
   position: relative;
   top: 50%;
@@ -410,3 +414,59 @@ h5 {
   width: 30px;
 }
 
+.search-bar {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* Centering container */
+.search-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 10vh; 
+}
+
+/* Search bar styles */
+.search-container {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  background-color: #244459;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+  border-color: #244459;
+}
+
+.search-input {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: rgba(179, 195, 207, 0.7);
+}
+
+.search-button {
+  width: 15%;
+  background-color: #244459;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.search-button:hover {
+  background-color: #244459;
+}
