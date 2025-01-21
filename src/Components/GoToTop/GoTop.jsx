@@ -4,7 +4,7 @@ import { BiSolidUpArrowSquare } from "react-icons/bi";
 
 export default function GoTop() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   };
 
   return (
@@ -13,3 +13,4 @@ export default function GoTop() {
     </div>
   );
 }
+

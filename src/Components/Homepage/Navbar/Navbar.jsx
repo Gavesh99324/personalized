@@ -41,7 +41,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/chatbot" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/Chatbot" className="nav-links" onClick={closeMobileMenu}>
               ChatWithUs
             </Link>
           </li>

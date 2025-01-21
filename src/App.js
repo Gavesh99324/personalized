@@ -8,6 +8,7 @@ import Navbar from "./Components/Homepage/Navbar/Navbar";
 import Footer from "./Components/Homepage/Footer/Footer";
 import GoTop from "./Components/GoToTop/GoTop";
 
+
 // Routes
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Chat" element={<ChatWithAssistant />} />
+        <Route path="/Chatbot" element={<ChatWithAssistant />} />
         <Route path="/Journal" element={<JournalPage />} />
         <Route path="/Login" element={<LoginPage />} />
       </Routes>
