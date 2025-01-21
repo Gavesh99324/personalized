@@ -1,17 +1,46 @@
+
+
+
 .contact-img {
-    width: 100%;
-    height: 400px; 
-    display: block; 
-    margin-top: 60px;
-    overflow: hidden; 
+  width: 100%;
+  height: 400px; 
+  display: block; 
+  margin-top: 60px;
+  overflow: hidden; 
 }
 
 .contact-img img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
 
 
+.contact-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contact-subtitle {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
