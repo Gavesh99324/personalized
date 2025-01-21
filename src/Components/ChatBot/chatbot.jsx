@@ -1,41 +1,68 @@
-import React from 'react'
-import './Chatbot.css'
-import ContactImg from '../../Assests/ContactImg.jpg'
+
+
+import React from 'react';
+import './Chatbot.css';
+import ContactImg from '../../Assests/ContactImg.jpg';
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
+
 
 export default function Chatbot() {
   return (
     <>
-    <div>
       <div className='contact-img'>
         <img src={ContactImg} alt="contact" />
         <h2 className='contact-title'>Contact Us</h2>
         <h4 className='contact-subtitle'>Connect with Us, Your Support Awaits</h4>
       </div>
-    </div>
-      
-    <div className='details-container'>
-      <h3 className='details-header'>Seamless Communication, <br />Global Impact.</h3>
 
-      <div className='card'>
-        <h5 className='address-header'>Head Office</h5>
-        <p className='address-text'>P.O. Box 854, Sir Marcus Fernando Mw.,<br /> Colombo 07</p>
-      </div>
-      <div className='card'>
-        <h5 className='email-header'>Email Us</h5>
-        <p className='email-text'>support@yourdomain.tld <br />hello@yourdomain.tld</p>
-      </div>
-      <div className='card'>
-        <h5 className='telephone-header'>Let's Talk</h5>
-        <p className='telephone-text'>phone: +94 11 222 3333 <br />Fax: +94 11 222 4444</p>
-      </div>
+      <div className="details-section">
+        <div className='details-container'>
+          <h3 className='details-header'>Seamless Communication, <br />Global Impact.</h3>
 
-    </div>
+          <div className='cards'>
+            <h5 className='address-header'>{<IoLocationOutline className='address-icon'/>}Head Office</h5>
+            <p className='address-text'>P.O. Box 854, Sir Marcus Fernando Mw.,<br />Colombo 07</p>
+          </div>
+          <div className='cards'>
+            <h5 className='email-header'>{<MdOutlineEmail className='email-icon'/>}Email Us</h5>
+            <p className='email-text'>support@yourdomain.tld <br />hello@yourdomain.tld</p>
+          </div>
+          <div className='cards'>
+            <h5 className='telephone-header'>{<MdOutlinePhoneInTalk className='phone-icon'/>}Let's Talk</h5>
+            <p className='telephone-text'>Phone: +94 11 222 3333 <br />Fax: +94 11 222 4444</p>
+          </div>
+        </div>
 
+        <div className="send-message-container">
+          <h3>Send us a message</h3>
+          <div className="name-container">
+            <div>
+              <h5>Name</h5>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <h5>Phone</h5>
+              <input type="tel" placeholder="Phone" />
+            </div>
+          </div>
+          <div className="email-container">
+            <h5>Email</h5>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="msg-container">
+            <h5>Message</h5>
+            <textarea className='message-area' placeholder="Message"></textarea>
+          </div>
+          <div className="button-container">
+            <button className='appointment-button'>Send Message</button>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
-
-
 
 
 

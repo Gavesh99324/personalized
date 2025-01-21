@@ -36,6 +36,7 @@
   background-color: #244459;
   border-radius: 10px;
   transition: all 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
   border: 2px solid transparent;
   position: relative;
