@@ -114,7 +114,7 @@ export default function Journal() {
        </div>
        <div className="image-cont">
          <button className="overlay-button">
-           <span className="line1">Healing from Trauma </span> 
+           <span className="line1">Healing from Trauma</span> 
            <span className="line2">Through EMDR</span>
            {<PiArrowSquareInThin className='arrow-icon'/>}
          </button>

@@ -221,7 +221,7 @@ h5 {
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 2;
   width: 100%;
-  max-width: 220px;
+  max-width: 210px;
   display: flex;
   flex-direction: column;
 }
@@ -330,6 +330,7 @@ h5 {
   margin-left: 0.2px;
   margin-top: 2px;
   padding-top: 1px;
+  margin-bottom: -1.25px;
   z-index: 2;
 }
 
@@ -526,12 +527,14 @@ h5 {
   color: #cb6caf;
   margin-right: 5px;
   font-size: 20px;
+  margin-bottom: -4px;
 }
 
 .icon-style {
   color: #cb6caf;
   margin-right: 5px;
   font-size: 20px;
+  margin-bottom: -4px;
 }
 
 
