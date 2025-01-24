@@ -172,3 +172,140 @@
     right: 300px;
 }
 
+
+
+
+
+
+
+
+
+.contact-card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    gap: 1px;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 175px;
+    gap: 2px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-card-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #244459;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: background-color 0.3s ease;
+    padding-top: 5px;
+  }
+  
+  .contact-card-button:hover {
+    background-color: #244459;
+  }
+  
+.contact-card-header {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+}
+
+.contact-card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c270bd;
+}
+
+
+
+
+
+
+
+.grids-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Each item (image + info box) */
+.grids-item {
+    position: relative;
+    text-align: center;
+}
+
+/* Image styling */
+.grids-image {
+    width: 160px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Rectangle Layer at Bottom */
+.grids-item::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 135px; 
+    height: 40px; 
+    background: #244459; 
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Therapist Information Box */
+.grids-info {
+    position: absolute;
+    bottom: -5px; /* Adjust for alignment */
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    text-align: center;
+    color: #244459;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Name Styling */
+.grids-info .first-line {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Title Styling */
+.grids-info .second-line {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0.8; /* Slightly lighter text */
+}

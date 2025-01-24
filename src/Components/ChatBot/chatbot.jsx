@@ -5,6 +5,11 @@ import './Chatbot.css';
 import ContactImg from '../../Assests/ContactImg.jpg';
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlinePhoneInTalk } from "react-icons/md";
+import { TbMessage } from "react-icons/tb";
+import { IoTicketOutline } from "react-icons/io5";
+import { TbBulb } from "react-icons/tb";
+
+
 
 export default function Chatbot() {
   useEffect(() => {
@@ -79,22 +84,45 @@ export default function Chatbot() {
       </div>
 
       <div className='map-section'>
-        <h3>Our Location</h3>
+        <h3 className='map-header'>Our Location</h3>
         <div className='map-container'>
           <div id="map" style={{ width: "100%", height: "400px" }}></div>
         </div>
       </div>
 
       <div className='social-media-section'>
-        <h3>Connect With Us</h3>
+        <h3 className='social-media-header'>Connect With Us</h3>
         <div className='social-media-container'>
           {/* Social media icons */}
         </div>
       </div>
 
-      <div className='back-to-top'>
-        <a href="#home"><span></span>Back to Top</a>
+      <div className='contact-us-section'>
+        <h2 className='contact-us-header'>Don't hesitate to contact us for <br /> more information.</h2>
       </div>
+
+      <div>
+       <div className="contact-card-container">
+        <div className="contact-card">
+          {<TbMessage className='contact-card-icon'/>}
+          <h3 className='contact-card-header'> Customer Support</h3>
+          <p>Some description here.</p>
+          <button className="contact-card-button">Chat Now</button>
+        </div>
+       <div className="contact-card">
+          {<IoTicketOutline className='contact-card-icon'/>}
+          <h3 className='contact-card-header'>Ticket Support</h3>
+          <p>Some description here.</p>
+          <button className="contact-card-button">Send Message</button>
+       </div>
+       <div className="contact-card">
+          {<TbBulb className='contact-card-icon'/>}
+          <h3 className='contact-card-header'>Free Insight</h3>
+          <p>Some description here.</p>
+          <button className="contact-card-button">Read Article</button>
+       </div>
+      </div>
+     </div>
 
       <div className='chatbot'>
         {/* Chatbot goes here */}

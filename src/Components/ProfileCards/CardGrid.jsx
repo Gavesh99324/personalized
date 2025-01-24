@@ -13,8 +13,11 @@ import Michael from "../../Assests/Michael.jpeg";
 import Linda from "../../Assests/Linda.jpeg";
 import William from "../../Assests/William.jpeg";
 import Lisa from "../../Assests/Lisa.jpeg";
+import Messi from "../../Assests/Messi.jpg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+
+
 
 
 // Array of doctor profiles
@@ -45,6 +48,7 @@ const CardGrid = () => {
   };
 
   return (
+    <>
     <div className="carousel-container">
       <button className="arrow left-arrow" onClick={handlePrevious}>
         <IoIosArrowBack/>
@@ -59,6 +63,44 @@ const CardGrid = () => {
         <IoIosArrowForward/>
       </button>
     </div>
+
+    <div className="grids-container">
+
+      <div className="grids-item">
+        <img className="grids-image" src={Sarah} alt="Sarah" />
+        <button className="grids-button">
+          <span className="first-line">Dr. Emma Collins</span>
+          <span className="second-line">CLINICAL PSYCHOLOGIST</span>
+        </button>
+      </div>
+
+      <div className="grids-item">
+        <img className="grids-image" src={John} alt="John" />
+        <div className="grids-info">  {/* Changed button to div */}
+         <span className="first-line">Alex Martin</span>
+         <span className="second-line">LICENSED THERAPIST</span>
+       </div>
+      </div>
+
+     <div className="grids-item">
+       <img className="grids-image" src={Messi} alt="Michael" />
+       <div className="grids-info">
+        <span className="first-line">Dr. Jason Reed</span>
+        <span className="second-line">PSYCHIATRIST</span>
+       </div>
+     </div>
+
+     <div className="grids-item">
+      <img className="grids-image" src={Linda} alt="Emily" />
+      <div className="grids-info">
+        <span className="first-line">Sarah Bennett</span>
+        <span className="second-line">MINDFULNESS COACH</span>
+      </div>
+     </div>
+  
+    </div>
+
+    </>
   );
 };
 

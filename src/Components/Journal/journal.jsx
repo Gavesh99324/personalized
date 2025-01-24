@@ -91,6 +91,7 @@ export default function Journal() {
           </div>
         </div>
       </div>
+      
       <div className="ap-header">
         <h2 className='topic'>Healing Narratives: See the</h2>
         <h2 className='topic'>Impact of Our Approach</h2>
@@ -166,6 +167,7 @@ export default function Journal() {
     </>
   );
 }
+
 
 
 

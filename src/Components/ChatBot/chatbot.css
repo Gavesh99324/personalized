@@ -183,3 +183,85 @@ input, textarea {
     padding-top: 1px;
     color: #ffffff;
 }
+
+.map-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.social-media-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.contact-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.25rem;
+}
+
+.contact-card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    gap: 1px;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 175px;
+    gap: 2px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-card-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #244459;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: background-color 0.3s ease;
+    padding-top: 5px;
+  }
+  
+  .contact-card-button:hover {
+    background-color: #244459;
+  }
+  
+.contact-card-header {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+}
+
+.contact-card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c270bd;
+}
