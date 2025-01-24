@@ -242,6 +242,23 @@
 
 
 
+.quote {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    color: #212326;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 .grids-container {
@@ -253,13 +270,11 @@
     padding: 20px;
 }
 
-/* Each item (image + info box) */
 .grids-item {
     position: relative;
     text-align: center;
 }
 
-/* Image styling */
 .grids-image {
     width: 160px;
     height: 175px;
@@ -268,44 +283,31 @@
     display: block;
 }
 
-/* Rectangle Layer at Bottom */
 .grids-item::after {
-    content: "";
+    content: attr(data-name) "\A" attr(data-title); 
     position: absolute;
-    bottom: -0.1px; 
+    bottom: -20px; 
     left: 50%;
     transform: translateX(-50%);
     width: 135px; 
     height: 40px; 
     background: #244459; 
     border-radius: 5px;
-    z-index: 1;
-}
-
-/* Therapist Information Box */
-.grids-info {
-    position: absolute;
-    bottom: -5px; /* Adjust for alignment */
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
     text-align: center;
-    color: #244459;
-    font-weight: bold;
-    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line; 
+    padding: 5px 0;
 }
 
-/* Name Styling */
-.grids-info .first-line {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
+.data-title {
+    color: #c270bd;
+
 }
 
-/* Title Styling */
-.grids-info .second-line {
-    display: block;
-    font-size: 12px;
-    font-weight: normal;
-    opacity: 0.8; /* Slightly lighter text */
-}
+

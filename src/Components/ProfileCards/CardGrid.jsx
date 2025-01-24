@@ -64,41 +64,32 @@ const CardGrid = () => {
       </button>
     </div>
 
-    <div className="grids-container">
 
-      <div className="grids-item">
-        <img className="grids-image" src={Sarah} alt="Sarah" />
-        <button className="grids-button">
-          <span className="first-line">Dr. Emma Collins</span>
-          <span className="second-line">CLINICAL PSYCHOLOGIST</span>
-        </button>
-      </div>
-
-      <div className="grids-item">
-        <img className="grids-image" src={John} alt="John" />
-        <div className="grids-info">  {/* Changed button to div */}
-         <span className="first-line">Alex Martin</span>
-         <span className="second-line">LICENSED THERAPIST</span>
-       </div>
-      </div>
-
-     <div className="grids-item">
-       <img className="grids-image" src={Messi} alt="Michael" />
-       <div className="grids-info">
-        <span className="first-line">Dr. Jason Reed</span>
-        <span className="second-line">PSYCHIATRIST</span>
-       </div>
-     </div>
-
-     <div className="grids-item">
-      <img className="grids-image" src={Linda} alt="Emily" />
-      <div className="grids-info">
-        <span className="first-line">Sarah Bennett</span>
-        <span className="second-line">MINDFULNESS COACH</span>
-      </div>
-     </div>
-  
+    <div className="quote">
+      <h3 className="quote-text">We talk a lot about hope <br />helping and teamwork</h3>
     </div>
+
+
+
+<div className="grids-container">
+
+  <div className="grids-item" data-name="Dr. Emma Collins" data-title="CLINICAL PSYCHOLOGIST">
+    <img className="grids-image" src={Sarah} alt="Sarah" />
+  </div>
+
+  <div className="grids-item" data-name="Alex Martin" data-title="LICENSED THERAPIST">
+    <img className="grids-image" src={John} alt="John" />
+  </div>
+
+  <div className="grids-item" data-name="Dr. Jason Reed" data-title="PSYCHIATRIST">
+    <img className="grids-image" src={Messi} alt="Michael" />
+  </div>
+
+  <div className="grids-item" data-name="Sarah Bennett" data-title="MINDFULNESS COACH">
+    <img className="grids-image" src={Linda} alt="Emily" />
+  </div>
+</div>
+
 
     </>
   );
