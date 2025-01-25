@@ -172,14 +172,6 @@
     right: 300px;
 }
 
-
-
-
-
-
-
-
-
 .contact-card-container {
     display: flex;
     justify-content: space-around;
@@ -238,12 +230,6 @@
     color: #c270bd;
 }
 
-
-
-
-
-
-
 .quote {
     font-style: italic;
     font-size: 1.25rem;
@@ -255,63 +241,6 @@
     align-items: center;
     text-align: center;
 }
-
-
-
-
-
-
-/*
-
-.grids-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-}
-
-.grids-item {
-    position: relative;
-    text-align: center;
-}
-
-.grids-image {
-    width: 160px;
-    height: 175px;
-    object-fit: cover;
-    border-radius: 5px;
-    display: block;
-}
-
-.grids-item::after {
-    content: attr(data-name) "\A" attr(data-title); 
-    position: absolute;
-    bottom: -20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 135px; 
-    height: 40px; 
-    background: #244459; 
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    white-space: pre-line; 
-    padding: 5px 0;
-}
-
-
-*/
-
-
-
 
 .grids-container {
     display: flex;
@@ -337,7 +266,7 @@
 
 .info {
     position: absolute;
-    bottom: -40px;
+    bottom: -18px;
     left: 50%;
     transform: translateX(-50%);
     width: 135px;
@@ -361,7 +290,11 @@
 }
 
 .data-title {
-    font-size: 12px;
+    font-size: 8px;
     font-weight: bold;
-    color: #FF007F;
+    color: #a84a79;
 }
+
+
+
+

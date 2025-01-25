@@ -1,5 +1,5 @@
 
-
+/*
 import React from "react";
 import "./Cards.css";
 import { CiFacebook } from "react-icons/ci";
@@ -41,6 +41,8 @@ const Card = ({ name, role, description, image }) => {
 };
 
 export default Card;
+
+*/
 
 
 

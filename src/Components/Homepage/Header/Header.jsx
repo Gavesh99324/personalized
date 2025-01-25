@@ -2,6 +2,7 @@
 import React from 'react';
 import F_Doctor from '../../../Assests/F_Doctor.png';
 import Doc_Green from '../../../Assests/Doc_Green.jpg';
+import HomeTop from '../../../Assests/HomeTop.jpg';
 import './Header.css';
 import { IoPersonOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
@@ -12,19 +13,14 @@ export default function Header() {
   return (
     <>
       <div className="header-container">
-        <img className="Doctor-image" src={F_Doctor} alt="Header" />
-        <div className="mission-statement">
-          <h2>Mission</h2>
-          <p>
-            "To provide comprehensive and evidence-based Mental Health Services appropriate to the local context through state-of-the-art approaches to patient care, capacity building, advocacy, community engagement, multi-sector collaboration, and research delivered by competent and reliable staff."
-          </p>
-        </div>
+          <img className='home-top-image' src={HomeTop} alt="" />
+          <h2 className='home-top-title'>About Us</h2>
+          <h6 className='home-top-subtitle'>Dedicated to Your Journey of Mental Wellness</h6>
       </div>
+
       <div className="header-content">
-        <h1>Welcome to Our Mental Health Centre</h1>
-        <p>
-          At our Mental Health Centre, we strive to provide exceptional mental health services to our clients, ensuring they receive the support and resources they need to live healthy, fulfilling their dreams, and thriving in the world around them.
-        </p>
+        <h5 className='who-we-are'>WHO WE ARE</h5>
+        <h1>Empowering Minds, Healing <br />Hearts, Cultivating Peace</h1>
         <div className="content-wrapper">
           <ul className='header-list'>
             <li>

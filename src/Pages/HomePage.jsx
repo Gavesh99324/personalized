@@ -11,7 +11,6 @@ export default function HomePage() {
     <div>
       <Header />
       <Support />
-      <Profiles />
       <CardGrid />
     </div>
     </>

@@ -1,10 +1,12 @@
 
+/*
+
 import React, { useEffect, useState } from 'react';
 import './Profiles.css';
 
 export default function Profiles() {
   const [text, setText] = useState(''); // State to hold the current text
-  const fullText = 'Our specialists'; // The full text to display
+  const fullText = ''; // The full text to display
 
   useEffect(() => {
     let index = 0; // To keep track of the current index
@@ -27,8 +29,8 @@ export default function Profiles() {
   );
 }
   
- 
- 
+
+ */
 
 
 
