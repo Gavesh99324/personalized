@@ -242,6 +242,13 @@
     text-align: center;
 }
 
+.meet-our-team {
+    color: #c154ae;
+    font-style: normal;
+    font-size: 0.7rem;
+    padding-bottom: 30px;
+}
+
 .grids-container {
     display: flex;
     justify-content: center;

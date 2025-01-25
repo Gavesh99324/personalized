@@ -60,6 +60,7 @@ const CardGrid = () => {
       */}
 
       <div className="quote">
+        <h4 className="meet-our-team">MEET OUR TEAM</h4>
         <h3 className="quote-text">We talk a lot about hope <br />helping and teamwork</h3>
       </div>
 

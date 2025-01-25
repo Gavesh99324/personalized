@@ -163,15 +163,15 @@
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #3DA9FC;
+  color: #c154ae;
 }
 
 .header-list li .item-name svg {
-  border: 2px solid #3DA9FC;
+  border: 2px solid #c154ae;
   padding: 8px;
   border-radius: 4px;
   margin-right: 10px;
-  color: #3DA9FC;
+  color: #c154ae;
   font-size: 2.2em;
 }
 
