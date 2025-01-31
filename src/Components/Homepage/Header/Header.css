@@ -207,7 +207,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -232,7 +232,12 @@
 }
 
 .image-container:hover .learn-more-btn {
-  opacity: 1; 
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #ffffff;
+  background-color: #244459; 
 }
 
 .typing-effect {
