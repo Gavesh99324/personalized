@@ -265,3 +265,7 @@ input, textarea {
     margin-bottom: 10px;
     color: #c270bd;
 }
+
+.contact-card:hover {
+    background-color: #244459;
+}

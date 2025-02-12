@@ -9,6 +9,7 @@ import { RiGroupLine } from "react-icons/ri";
 import { FaStreetView } from "react-icons/fa";
 import { TbLeaf } from "react-icons/tb";
 
+
 export default function Header() {
   return (
     <>
@@ -49,18 +50,18 @@ export default function Header() {
             </li>
           </ul>
           
-          {/* Image container with text overlay */}
+         
           <div className="image-container">
             <img className="Doc-Green-image" src={Doc_Green} alt="Doctor Green" />
             
-            {/* Overlay text */}
+            
             <div className="overlay">
               <h2>
                 <span className="typing-effect">Committed to Nurturing</span>
                 <br />
                 <span className="typing-effect-line-2">Your Inner Peace</span>
               </h2>
-              {/* Learn More Button */}
+              
               <button className="learn-more-btn">Learn More</button>
             </div>
           </div>
@@ -69,5 +70,10 @@ export default function Header() {
     </>
   );
 }
+
+
+
+
+
 
 
