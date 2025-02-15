@@ -28,25 +28,25 @@ export default function Header() {
               <div className="item-name">
                 <IoPersonOutline /> Individual Therapy 
               </div>
-              <p>Personalized sessions focusing on the unique challenges and goals of each individual.</p>
+              <p className='item-desc'>Personalized sessions focusing on the unique challenges and goals of each individual.</p>
             </li>
             <li>
               <div className="item-name">
                 <RiGroupLine /> Group Counseling
               </div>
-              <p>A supportive environment where individuals share and learn from others with similar experiences.</p>
+              <p className='item-desc'>A supportive environment where individuals share and learn from others with similar experiences.</p>
             </li>
             <li>
               <div className="item-name">
                 <FaStreetView /> Stress Management
               </div>
-              <p>Strategies and techniques to manage and reduce stress for a healthier lifestyle.</p>
+              <p className='item-desc'>Strategies and techniques to manage and reduce stress for a healthier lifestyle.</p>
             </li>
             <li>
               <div className="item-name">
                 <TbLeaf /> Anxiety & Depression
               </div>
-              <p>Comprehensive support to help manage and overcome symptoms of anxiety and depression.</p>
+              <p className='item-desc'>Comprehensive support to help manage and overcome symptoms of anxiety and depression.</p>
             </li>
           </ul>
           
@@ -70,6 +70,9 @@ export default function Header() {
     </>
   );
 }
+
+
+
 
 
 

@@ -10,7 +10,6 @@ import { IoTicketOutline } from "react-icons/io5";
 import { TbBulb } from "react-icons/tb";
 
 
-
 export default function Chatbot() {
   useEffect(() => {
     const loadGoogleMaps = () => {
@@ -22,9 +21,16 @@ export default function Chatbot() {
     };
 
     window.initMap = () => {
-      new window.google.maps.Map(document.getElementById("map"), {
+      const map = new window.google.maps.Map(document.getElementById("map"), {
         center: { lat: 6.9271, lng: 79.8612 }, // Colombo, Sri Lanka
         zoom: 15,
+      });
+
+      // Add a red marker
+      new window.google.maps.Marker({
+        position: { lat: 6.9271, lng: 79.8612 },
+        map: map,
+        title: "Colombo",
       });
     };
 

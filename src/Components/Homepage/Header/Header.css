@@ -175,11 +175,15 @@
   font-size: 2.2em;
 }
 
-.header-list li p {
-  margin: 5px 30px 0 20px; 
+.header-list li .item-desc {
+  margin-top: 5px;
+  margin-right: 30px;
+  margin-bottom: 0px;
+  margin-left: 53px;
   font-size: 0.7rem;
   color: #8d928e;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .image-container {

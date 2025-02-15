@@ -56,7 +56,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/AboutUs" className="nav-links" onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
@@ -75,6 +75,7 @@ export default function Navbar() {
     </>
   );
 }
+
 
 
 

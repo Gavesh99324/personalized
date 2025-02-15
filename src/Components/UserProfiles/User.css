@@ -1,0 +1,15 @@
+.welcome {
+    font-size: 10rem;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 20rem;
+}
+
+.user-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
