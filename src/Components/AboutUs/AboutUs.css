@@ -1,7 +1,10 @@
 .about-container {
-    width: 50vw;
-    height: 50vh;
-    overflow: hidden; /* Prevents scrolling */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-image {
@@ -10,4 +13,3 @@
     object-fit: cover;
     display: block;
 }
-
