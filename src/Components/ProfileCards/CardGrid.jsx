@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Card from "./Cards";
 import "./Cards.css";
+
 import John from "../../Assests/John.jpeg";
 import Jane from "../../Assests/Jane.jpeg";
 import Mark from "../../Assests/Mark.jpeg";
@@ -13,6 +14,9 @@ import Linda from "../../Assests/Linda.jpeg";
 import William from "../../Assests/William.jpeg";
 import Lisa from "../../Assests/Lisa.jpeg";
 import Messi from "../../Assests/Messi.jpg";
+import Ex_Meeting from "../../Assests/Ex_Meeting.jpg";
+
+
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const doctors = [
@@ -80,8 +84,43 @@ const CardGrid = () => {
           </div>
         ))}
       </div>
+
+
+    <div className="contact-experts">
+
+      <div className="left-container-professional">
+         <div className="left-contact-text">
+            <h3 className="contact-text">Caring Professional, Here to <br /> Support You. </h3>
+            <p className="contact-para"> "Pain itself is very important, it is followed by the greatest care. As the elite said, 
+               constraints and problems of the body, the pain of the lion." 
+            </p>
+         </div>
+          
+          <div className="two-contact">
+             <div className="contact-first">
+                <h3>Licensed and Experienced Experts</h3>
+             </div>
+             <div className="contact-second">
+                <h3>Holistic and <br /> Evidence based <br />Practices</h3>
+             </div>
+          </div>
+          
+      </div>
+
+      <div className="right-container-professional">
+         <div className="right-contact-image">
+            <img className="contact-professional-image" src={Ex_Meeting} alt="Emily" />
+         </div>
+      </div>
+      
+    </div>
+      
+
     </>
   );
 };
 
 export default CardGrid;
+
+
+
