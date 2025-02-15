@@ -22,11 +22,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Chatbot" element={<ChatWithAssistant />} />
-        <Route path="/Journal" element={<JournalPage />} />
-        <Route path="/Login" element={<LoginPage />} />
-        <Route path="/Profile" element={<UserProfile />} />
-        <Route path="/AboutUs" element={<AboutUsPage />} />
+        <Route path="/chatbot" element={<ChatWithAssistant />} />
+        <Route path="/journal" element={<JournalPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/profile" element={<UserProfile />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
       </Routes>
       <GoTop />
       <Footer />

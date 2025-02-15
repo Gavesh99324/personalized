@@ -1,8 +1,13 @@
+.about-container {
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden; /* Prevents scrolling */
+}
 
 .about-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    margin: 0;
+    display: block;
 }
 

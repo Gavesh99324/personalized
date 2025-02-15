@@ -20,6 +20,8 @@ export default function Navbar() {
     setDropdown(false);
   };
 
+  const toggleDropdown = () => setDropdown((prev) => !prev);
+
   return (
     <>
       <nav className="navbar">
@@ -41,13 +43,13 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Chatbot" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/chatbot" className="nav-links" onClick={closeMobileMenu}>
               ChatWithUs
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
-              <Button />
+              <Button to = '/login' />
             </Link>
           </li>
           <li className="nav-item">
@@ -56,7 +58,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/AboutUs" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
@@ -64,6 +66,7 @@ export default function Navbar() {
             className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={toggleDropdown}
           >
             <Link to="#" className="nav-links">
               Services <i className="fas fa-caret-down" />
@@ -75,6 +78,10 @@ export default function Navbar() {
     </>
   );
 }
+
+
+
+
 
 
 
