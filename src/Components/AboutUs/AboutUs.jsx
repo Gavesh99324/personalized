@@ -1,4 +1,5 @@
 import React from 'react';
+import './AboutUs.css';
 import Appointment from '../../Assests/Appointment.jpg';
 
 export default function AboutUs() {

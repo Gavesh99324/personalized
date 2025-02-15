@@ -64,8 +64,8 @@ export default function Navbar() {
           </li>
           <li
             className="nav-item"
-            onMouseEnter={toggleDropdown}
-            onMouseLeave={toggleDropdown}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             onClick={toggleDropdown}
           >
             <Link to="#" className="nav-links">
