@@ -115,7 +115,7 @@ const CardGrid = () => {
             <div className="telephone-container">
               {BiPhoneCall && <BiPhoneCall className="telephone-icon" />}
               <h3 className="quote">Need more help?</h3>
-              <h3 className="telephone-num">(888) 4000-2424</h3>
+              <a href="tel:88840002424" className="telephone-num">(888) 4000-2424</a>
             </div>
          </div>
       </div>
