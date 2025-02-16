@@ -18,6 +18,8 @@ import Ex_Meeting from "../../Assests/Ex_Meeting.jpg";
 
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { BiPhoneCall } from "react-icons/bi";
+
 
 const doctors = [
   { name: "Dr. John Doe", role: "Cardiologist", description: "Expert in cardiovascular health.", image: John },
@@ -110,6 +112,11 @@ const CardGrid = () => {
       <div className="right-container-professional">
          <div className="right-contact-image">
             <img className="contact-professional-image" src={Ex_Meeting} alt="Emily" />
+            <div className="telephone-container">
+              {BiPhoneCall && <BiPhoneCall className="telephone-icon" />}
+              <h3 className="quote">Need more help?</h3>
+              <h3 className="telephone-num">(888) 4000-2424</h3>
+            </div>
          </div>
       </div>
       
@@ -121,6 +128,8 @@ const CardGrid = () => {
 };
 
 export default CardGrid;
+
+
 
 
 

@@ -407,3 +407,50 @@
     }
 }
 
+.right-contact-image {
+    position: relative; 
+    display: inline-block; 
+}
+
+.telephone-container {
+    position: absolute;
+    bottom: 14px;
+    left: 10px; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    text-align: left;
+    gap: 12px;
+}
+
+.telephone-icon {
+    color: #c154ae;
+    font-size: 40px;
+}
+
+.telephone-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+}
+
+.telephone-num {
+    color: #c154ae;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
