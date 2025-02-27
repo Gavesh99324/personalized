@@ -334,6 +334,10 @@ h5 {
   z-index: 2;
 }
 
+.app-btn .play-store {
+  color: #ffffff;
+}
+
 .layerPic {
   position: absolute;
   right: 300px;
@@ -344,8 +348,6 @@ h5 {
   z-index: 2;
   border-radius: 20px;
 }
-
-
 
 .bookAppointment {
   position: absolute;

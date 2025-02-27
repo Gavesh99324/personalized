@@ -125,7 +125,11 @@ export default function Journal() {
       <div className='shake-hand-container'>
         <img className='shake-hand' src={ShakeHand} alt="ShakeHands" />
         <h4 className='shake-hand-header'>Track Your Mental Health <br />and Discover Happiness</h4>
-        <button className='app-btn'>{<IoLogoApple className='apple-icon'/>} Download App</button>
+        <button className='app-btn'>{<IoLogoApple className='apple-icon'/>}
+           <a className='play-store' href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">  
+              Download App
+           </a>
+        </button>
         <img className='layerPic' src={LayerPic} alt="AppWall" />
 
         <div className='bookAppointment'>
