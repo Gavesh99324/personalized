@@ -1,5 +1,5 @@
 import React from 'react'
-import Appointment from '../../Assests/Appointment.jpg';
+import Appointment from '../../Assets/Appointment.jpg';
 
 
 export default function User() {

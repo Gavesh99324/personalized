@@ -180,8 +180,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-
-
 /* Additional CSS for the container and footer */
 .container {
     display: flex;
@@ -191,13 +189,7 @@ code {
     min-height: 100vh; 
 }
 
-.footer {
-    width: 100%; 
-    text-align: center; 
-    padding: 20px; 
-    background: rgba(255, 255, 255, 0.9); 
-    position: relative; 
-    z-index: 1; 
-}
+
+
 
 
