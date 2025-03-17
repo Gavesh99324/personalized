@@ -2,12 +2,10 @@
 
 import React, { useEffect } from 'react';
 import './Chatbot.css';
-import ContactImg from '../../Assests/ContactImg.jpg';
-import { IoLocationOutline } from "react-icons/io5";
+import ContactImg from '../../Assets/ContactImg.jpg';
+import { IoLocationOutline, IoTicketOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlinePhoneInTalk } from "react-icons/md";
-import { TbMessage } from "react-icons/tb";
-import { IoTicketOutline } from "react-icons/io5";
-import { TbBulb } from "react-icons/tb";
+import { TbMessage, TbBulb } from "react-icons/tb";
 
 
 export default function Chatbot() {

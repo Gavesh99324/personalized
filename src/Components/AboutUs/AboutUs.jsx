@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import Appointment from '../../Assests/Appointment.jpg';
+import Appointment from '../../Assets/Appointment.jpg';
 
 export default function AboutUs() {
   return (

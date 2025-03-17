@@ -1,17 +1,17 @@
 
 import React from 'react';
 import './Journal.css';
-import Appointment from '../../Assests/Appointment.jpg';
-import Doc from '../../Assests/Doc.jpg';
-import Anxity from '../../Assests/Anxity.jpg';
-import EMDR from '../../Assests/EMDR.jpg';
-import Therapy from '../../Assests/Therapy.jpg';
-import ShakeHand from '../../Assests/ShakeHand.jpg';
+import Appointment from '../../Assets/Appointment.jpg';
+import Doc from '../../Assets/Doc.jpg';
+import Anxity from '../../Assets/Anxity.jpg';
+import EMDR from '../../Assets/EMDR.jpg';
+import Therapy from '../../Assets/Therapy.jpg';
+import ShakeHand from '../../Assets/ShakeHand.jpg';
 import { IoLogoApple } from "react-icons/io";
-import LayerPic from '../../Assests/LayerPic.jpg';
-import { IoPeopleOutline } from "react-icons/io5";
-import Emily from '../../Assests/Emily.jpeg';
-import { IoSearch } from "react-icons/io5";
+import LayerPic from '../../Assets/LayerPic.jpg';
+import { IoPeopleOutline, IoSearch } from "react-icons/io5";
+import Emily from '../../Assets/Emily.jpeg';
+
 
 import { FaRegHandshake } from "react-icons/fa";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";

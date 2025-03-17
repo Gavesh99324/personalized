@@ -1,8 +1,7 @@
 
 import React from 'react';
-import F_Doctor from '../../../Assests/F_Doctor.png';
-import Doc_Green from '../../../Assests/Doc_Green.jpg';
-import HomeTop from '../../../Assests/HomeTop.jpg';
+import Doc_Green from '../../../Assets/Doc_Green.jpg';
+import HomeTop from '../../../Assets/HomeTop.jpg';
 import './Header.css';
 import { IoPersonOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";

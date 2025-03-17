@@ -2,11 +2,10 @@
 
 import React from 'react';
 import './Support.css';
-import { IoDocumentTextOutline } from "react-icons/io5";
+import { IoDocumentTextOutline, IoSettingsOutline } from "react-icons/io5";
 import { IoMdPaperPlane } from "react-icons/io";
-import { IoSettingsOutline } from "react-icons/io5";
 import { VscGraph } from "react-icons/vsc";
-import BgofHome from '../../../Assests/BgofHome.jpg';
+import BgofHome from '../../../Assets/BgofHome.jpg';
 
 export default function Support() {
   return (

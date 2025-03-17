@@ -1,25 +1,20 @@
 
-
 import React, { useState } from "react";
-import Card from "./Cards";
 import "./Cards.css";
 
-import John from "../../Assests/John.jpeg";
-import Jane from "../../Assests/Jane.jpeg";
-import Mark from "../../Assests/Mark.jpeg";
-import Emily from "../../Assests/Emily.jpeg";
-import Sarah from "../../Assests/Sarah.jpeg";
-import Michael from "../../Assests/Michael.jpeg";
-import Linda from "../../Assests/Linda.jpeg";
-import William from "../../Assests/William.jpeg";
-import Lisa from "../../Assests/Lisa.jpeg";
-import Messi from "../../Assests/Messi.jpg";
-import Ex_Meeting from "../../Assests/Ex_Meeting.jpg";
+import John from "../../Assets/John.jpeg";
+import Jane from "../../Assets/Jane.jpeg";
+import Mark from "../../Assets/Mark.jpeg";
+import Emily from "../../Assets/Emily.jpeg";
+import Sarah from "../../Assets/Sarah.jpeg";
+import Michael from "../../Assets/Michael.jpeg";
+import Linda from "../../Assets/Linda.jpeg";
+import William from "../../Assets/William.jpeg";
+import Lisa from "../../Assets/Lisa.jpeg";
+import Messi from "../../Assets/Messi.jpg";
+import Ex_Meeting from "../../Assets/Ex_Meeting.jpg";
 
-
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { BiPhoneCall } from "react-icons/bi";
-
 
 const doctors = [
   { name: "Dr. John Doe", role: "Cardiologist", description: "Expert in cardiovascular health.", image: John },
@@ -48,22 +43,6 @@ const CardGrid = () => {
 
   return (
     <>
-      {/*
-      <div className="carousel-container">
-        <button className="arrow left-arrow" onClick={handlePrevious}>
-          <IoIosArrowBack />
-        </button>
-        <Card
-          name={doctors[currentIndex].name}
-          role={doctors[currentIndex].role}
-          description={doctors[currentIndex].description}
-          image={doctors[currentIndex].image}
-        />
-        <button className="arrow right-arrow" onClick={handleNext}>
-          <IoIosArrowForward />
-        </button>
-      </div>
-      */}
 
       <div className="quote">
         <h4 className="meet-our-team">MEET OUR TEAM</h4>
