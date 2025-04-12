@@ -7,6 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { RiGroupLine } from "react-icons/ri";
 import { FaStreetView } from "react-icons/fa";
 import { TbLeaf } from "react-icons/tb";
+import { motion } from 'framer-motion';
 
 
 export default function Header() {
@@ -14,8 +15,20 @@ export default function Header() {
     <>
       <div className="header-container">
           <img className='home-top-image' src={HomeTop} alt="" />
-          <h2 className='home-top-title'>About Us</h2>
-          <h6 className='home-top-subtitle'>Dedicated to Your Journey of Mental Wellness</h6>
+          <motion.h2
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400 }} 
+              className='home-top-title'>
+                About Us
+          </motion.h2>
+          <motion.h6
+            initial={{ width: 0 }}
+            animate={{ width: 'fit-content' }}
+            style={{ translateX: '-50%', translateY: '-50%' }}
+            transition={{ duration: 1, ease: 'linear' }} 
+            className='home-top-subtitle typing-subtitle'>
+              Dedicated to Your Journey of Mental Wellness
+          </motion.h6>
       </div>
 
       <div className="header-content">
