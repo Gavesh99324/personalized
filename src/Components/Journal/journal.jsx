@@ -18,12 +18,15 @@ import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { TbMessage2 } from "react-icons/tb";
+import { motion } from 'framer-motion';
+
 
 import AppointmentForm from './AppointmentForm';
 import MediaCard from './MediaCard';
 import TherapistBooking from './TherapistBooking';
 import SearchBar from './SearchBar';
 import DetailCard from './DetailCard';
+
 
 export default function Journal() {
   const header = [
@@ -39,8 +42,19 @@ export default function Journal() {
     <>
       <div className="header-image">
         <img className="journal-image" src={Appointment} alt="Appointment" />
-        <h2 className="journal-header">Appointment</h2>
-        <h6 className="journal-subheader">Secure Your Spot for Healing and Support</h6>
+        <motion.h2 
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400 }} 
+          className="journal-header">Appointment
+        </motion.h2>
+        <motion.h6 
+           initial={{ width: 0 }}
+           animate={{ width: 'fit-content' }}
+           style={{ translateX: '-50%', translateY: '-50%' }}
+           transition={{ duration: 1, ease: 'linear' }}
+           className="journal-subheader typing-subtitle">
+            Secure Your Spot for Healing and Support
+        </motion.h6>
       </div>
 
       <AppointmentForm Doc={Doc} />

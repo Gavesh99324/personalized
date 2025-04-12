@@ -6,6 +6,7 @@ import ContactImg from '../../Assets/ContactImg.jpg';
 import { IoLocationOutline, IoTicketOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlinePhoneInTalk } from "react-icons/md";
 import { TbMessage, TbBulb } from "react-icons/tb";
+import { motion } from 'framer-motion';
 
 
 export default function Chatbot() {
@@ -39,8 +40,20 @@ export default function Chatbot() {
     <>
       <div className='contact-img'>
         <img src={ContactImg} alt="contact" />
-        <h2 className='contact-title'>Contact Us</h2>
-        <h4 className='contact-subtitle'>Connect with Us, Your Support Awaits</h4>
+        <motion.h2
+           whileHover={{ scale: 1.1 }}
+           transition={{ type: "spring", stiffness: 400 }} 
+           className='contact-title'>
+            Contact Us
+        </motion.h2>
+        <motion.h4
+           initial={{ width: 0 }}
+           animate={{ width: 'fit-content' }}
+           style={{ translateX: '-50%', translateY: '-50%' }}
+           transition={{ duration: 1, ease: 'linear' }} 
+           className='contact-subtitle'>
+            Connect with Us, Your Support Awaits
+        </motion.h4>
       </div>
 
       <div className="details-section">
