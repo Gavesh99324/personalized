@@ -1,87 +1,114 @@
 
 import React, { useState } from 'react';
-import './Login.css';
-import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
-
+import {
+  Box,
+  Button,
+  Checkbox,
+  FormControlLabel,
+  TextField,
+  Typography,
+  Paper,
+  Link,
+} from '@mui/material';
 
 export default function Login() {
-  const [action, setAction] = useState('');
+  const [isRegistering, setIsRegistering] = useState(false);
 
-  const registerLink = () => {
-    setAction('active');
+  const handleToggle = () => {
+    setIsRegistering(!isRegistering);
   };
 
-  const loginLink = () => {
-    setAction('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Your login/register logic here
   };
 
   return (
-    <div className="container">
-      <div className="background-image" />
-      <div className={`wrapper ${action}`}>
-        <div className='form-box login'>
-          <form action="">
-            <h1>Login</h1>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        background: '#f0f2f5',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        pt: 15, // <--- margin from the top
+        pb: 15,
+      }}
+    >
+      <Paper elevation={6} sx={{ p: 4, width: '90%', maxWidth: 400 }}>
+        <Typography variant="h5" align="center" gutterBottom>
+          {isRegistering ? 'Register' : 'Login'}
+        </Typography>
 
-            <div className="input-box">
-              <input type="text" placeholder="Username" required />
-              <FaUser className='icon' />
-            </div>
+        <Box component="form" onSubmit={handleSubmit}>
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            label="Username"
+            variant="outlined"
+          />
 
-            <div className="input-box">
-              <input type="password" placeholder="Password" required />
-              <FaLock className='icon' />
-            </div>
+          {isRegistering && (
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              type="email"
+              label="Email"
+              variant="outlined"
+            />
+          )}
 
-            <div className="remember-forgot">
-              <label>
-                <input type="checkbox" /> Remember me
-              </label>
-              <a href="#">Forgot password?</a>
-            </div>
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            type="password"
+            label="Password"
+            variant="outlined"
+          />
 
-            <button type='submit'>Login</button>
+          <FormControlLabel
+            control={<Checkbox color="primary" />}
+            label={
+              isRegistering
+                ? 'I agree to the terms & conditions'
+                : 'Remember me'
+            }
+          />
 
-            <div className="register-link">
-              <p>Don't have an account? <a href="#" onClick={registerLink}>Register</a></p>
-            </div>
-          </form>
-        </div>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 2, mb: 2 }}
+          >
+            {isRegistering ? 'Register' : 'Login'}
+          </Button>
 
-        <div className='form-box register'>
-          <form action="">
-            <h1>Registration</h1>
+          <Typography align="center">
+            {isRegistering ? (
+              <>
+                Already have an account?{' '}
+                <Link href="#" onClick={handleToggle}>Login</Link>
+              </>
+            ) : (
+              <>
+                Don&apos;t have an account?{' '}
+                <Link href="#" onClick={handleToggle}>Register</Link>
+              </>
+            )}
+          </Typography>
 
-            <div className="input-box">
-              <input type="text" placeholder="Username" required />
-              <FaUser className='icon' />
-            </div>
-
-            <div className="input-box">
-              <input type="email" placeholder="Email" required />
-              <FaEnvelope className='icon' />
-            </div>
-
-            <div className="input-box">
-              <input type="password" placeholder="Password" required />
-              <FaLock className='icon' />
-            </div>
-
-            <div className="remember-forgot">
-              <label>
-                <input type="checkbox" /> I agree to the terms & conditions
-              </label>
-            </div>
-
-            <button type='submit'>Register</button>
-
-            <div className="register-link">
-              <p>Already have an account? <a href="#" onClick={loginLink}>Login</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+          {!isRegistering && (
+            <Typography align="center" sx={{ mt: 2 }}>
+              <Link href="#">Forgot password?</Link>
+            </Typography>
+          )}
+        </Box>
+      </Paper>
+    </Box>
   );
 }
 
